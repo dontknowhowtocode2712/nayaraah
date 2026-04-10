@@ -1,1 +1,39 @@
-[]
+{
+  "updated": "10 Apr 2026",
+  "IN": [
+    {"name": "Wise",         "rate": 22.85, "fee": 4,  "speed": "Minutes",  "best": true},
+    {"name": "Al Ansari",    "rate": 22.60, "fee": 10, "speed": "Same day", "best": false},
+    {"name": "LuLu Exchange","rate": 22.54, "fee": 8,  "speed": "Same day", "best": false},
+    {"name": "Western Union","rate": 22.10, "fee": 15, "speed": "Minutes",  "best": false}
+  ],
+  "PK": [
+    {"name": "Wise",         "rate": 77.20, "fee": 4,  "speed": "Minutes",  "best": true},
+    {"name": "Al Ansari",    "rate": 76.80, "fee": 10, "speed": "Same day", "best": false},
+    {"name": "LuLu Exchange","rate": 76.50, "fee": 8,  "speed": "Same day", "best": false},
+    {"name": "Western Union","rate": 75.90, "fee": 15, "speed": "Minutes",  "best": false}
+  ],
+  "BD": [
+    {"name": "bKash/Nagad",  "rate": 29.40, "fee": 5,  "speed": "Minutes",  "best": true},
+    {"name": "Al Ansari",    "rate": 29.10, "fee": 10, "speed": "Same day", "best": false},
+    {"name": "LuLu Exchange","rate": 28.90, "fee": 8,  "speed": "Same day", "best": false},
+    {"name": "Western Union","rate": 28.50, "fee": 15, "speed": "Minutes",  "best": false}
+  ],
+  "NP": [
+    {"name": "IME",          "rate": 35.20, "fee": 5,  "speed": "Minutes",  "best": true},
+    {"name": "Al Ansari",    "rate": 34.90, "fee": 10, "speed": "Same day", "best": false},
+    {"name": "LuLu Exchange","rate": 34.70, "fee": 8,  "speed": "Same day", "best": false},
+    {"name": "Western Union","rate": 34.20, "fee": 15, "speed": "Minutes",  "best": false}
+  ],
+  "LK": [
+    {"name": "Wise",         "rate": 83.10, "fee": 4,  "speed": "Minutes",  "best": true},
+    {"name": "Al Ansari",    "rate": 82.50, "fee": 10, "speed": "Same day", "best": false},
+    {"name": "LuLu Exchange","rate": 82.20, "fee": 8,  "speed": "Same day", "best": false},
+    {"name": "Western Union","rate": 81.40, "fee": 15, "speed": "Minutes",  "best": false}
+  ],
+  "PH": [
+    {"name": "Wise",         "rate": 16.20, "fee": 4,  "speed": "Minutes",  "best": true},
+    {"name": "Al Ansari",    "rate": 16.00, "fee": 10, "speed": "Same day", "best": false},
+    {"name": "LuLu Exchange","rate": 15.90, "fee": 8,  "speed": "Same day", "best": false},
+    {"name": "Western Union","rate": 15.70, "fee": 15, "speed": "Minutes",  "best": false}
+  ]
+}
