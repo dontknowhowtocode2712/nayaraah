@@ -449,8 +449,8 @@ function submitForm(){
 
   Then replace YOUR_GOOGLE_APPS_SCRIPT_URL below with the URL Google gives you.
   */
-  var SHEET_URL='YOUR_GOOGLE_APPS_SCRIPT_URL';
-  fetch(SHEET_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}).catch(function(){});
+  var SHEET_URL='https://formspree.io/f/xqegregr';
+  fetch(SHEET_URL,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)}).catch(function(){});
   document.getElementById('the-form').style.display='none';
   document.getElementById('success-box').style.display='block';
   document.getElementById('contact').scrollIntoView({behavior:'smooth'});
