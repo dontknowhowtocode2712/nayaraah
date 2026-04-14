@@ -358,6 +358,11 @@ footer{padding:20px 16px;text-align:center;font-size:12px;color:var(--muted);
       </div>
     </div>
     <div class="field">
+      <label id="fl7">Referral code</label>
+      <div class="hint" id="fl7h">Please enter zero (0) if you do not have a referral code</div>
+      <input type="text" id="f-ref" placeholder="e.g. NYR-001 or 0" autocomplete="off">
+    </div>
+    <div class="field">
       <label id="fl6">Anything else? <span style="font-weight:400;color:var(--muted)">(optional)</span></label>
       <div class="hint" id="fl6h">Are you trying to save more? Looking for better work? Been scammed? Write anything — or leave this blank.</div>
       <textarea id="f-msg" placeholder="You can write in your own language if that is easier."></textarea>
@@ -431,12 +436,13 @@ function submitForm(){
   var wa=document.getElementById('f-wa').value.trim();
   var country=document.getElementById('f-country').value;
   var help=document.getElementById('f-help').value;
-  if(!name||!wa||!country||!help){
-    alert('Please fill in your name, WhatsApp number, country, and what you would like assistance with.');
+  var ref=document.getElementById('f-ref').value.trim();
+  if(!name||!wa||!country||!help||!ref){
+    alert('Please fill in your name, WhatsApp number, country, what you would like assistance with, and your referral code (enter 0 if you do not have one).');
     return;
   }
   var msg=document.getElementById('f-msg').value.trim();
-  var payload={name:name,whatsapp:wa,country:country,help:help,english:engLevel||'Not selected',message:msg,timestamp:new Date().toISOString()};
+  var payload={name:name,whatsapp:wa,country:country,help:help,english:engLevel||'Not selected',referral:ref,message:msg,timestamp:new Date().toISOString()};
   /*
   GOOGLE APPS SCRIPT — paste into Extensions > Apps Script in your Google Sheet, then Deploy > New deployment > Web app > Anyone can access:
 
@@ -504,6 +510,8 @@ en:{
 'fl5h':'This helps me understand how best to reach out to you',
 'fl6':'Anything else?',
 'fl6h':'Are you trying to save more? Looking for better work? Been scammed? Write anything — or leave this blank.',
+'fl7':'Referral code',
+'fl7h':'Please enter zero (0) if you do not have a referral code',
 'f-btn':'Send — I will be in touch soon',
 'f-priv':'Only I will see what you share here. I will never pass your details to anyone else.',
 'suc-title':'Thank you. I will message you on WhatsApp soon.',
@@ -558,6 +566,8 @@ hi:{
 'fl5h':'इससे मुझे समझ आएगा कि आपसे कैसे बात करूँ',
 'fl6':'और कुछ?',
 'fl6h':'ज़्यादा बचाना चाहते हैं? बेहतर काम ढूंढ रहे हैं? धोखे का शिकार हुए? कुछ भी लिखें — या खाली छोड़ दें।',
+'fl7':'रेफरल कोड',
+'fl7h':'अगर आपके पास कोड नहीं है तो शून्य (0) लिखें',
 'f-btn':'भेजें — मैं जल्द संपर्क करूँगा',
 'f-priv':'केवल मैं यह देखूँगा। मैं कभी किसी को नहीं दूँगा।',
 'suc-title':'शुक्रिया। मैं जल्द WhatsApp पर संपर्क करूँगा।',
@@ -612,6 +622,8 @@ ur:{
 'fl5h':'اس سے مجھے سمجھ آئے گا کہ آپ سے کیسے رابطہ کروں',
 'fl6':'اور کچھ؟',
 'fl6h':'زیادہ بچانا چاہتے ہیں؟ بہتر کام ڈھونڈ رہے ہیں؟ دھوکے کا شکار ہوئے؟ کچھ بھی لکھیں — یا خالی چھوڑ دیں۔',
+'fl7':'ریفرل کوڈ',
+'fl7h':'اگر آپ کے پاس کوڈ نہیں ہے تو صفر (0) لکھیں',
 'f-btn':'بھیجیں — میں جلد رابطہ کروں گا',
 'f-priv':'صرف میں یہ دیکھوں گا۔ میں کبھی کسی کو نہیں دوں گا۔',
 'suc-title':'شکریہ۔ میں جلد WhatsApp پر رابطہ کروں گا۔',
@@ -666,6 +678,8 @@ ta:{
 'fl5h':'உங்களை எவ்வாறு தொடர்புகொள்வது என்று புரிந்துகொள்ள இது உதவுகிறது',
 'fl6':'வேறு ஏதாவது?',
 'fl6h':'அதிகமாக சேமிக்க விரும்புகிறீர்களா? சிறந்த வேலை தேடுகிறீர்களா? மோசடிக்கு ஆளானீர்களா? எதையும் எழுதுங்கள் — அல்லது காலியாக விடுங்கள்.',
+'fl7':'ரெஃபரல் குறியீடு',
+'fl7h':'உங்களிடம் குறியீடு இல்லையெனில் பூஜ்ஜியம் (0) உள்ளிடுங்கள்',
 'f-btn':'அனுப்புங்கள் — விரைவில் தொடர்பு கொள்கிறேன்',
 'f-priv':'நான் மட்டுமே இதை பார்ப்பேன். வேறு யாரிடமும் தருவதில்லை.',
 'suc-title':'நன்றி. விரைவில் WhatsApp-ல் தொடர்பு கொள்கிறேன்.',
@@ -720,6 +734,8 @@ ml:{
 'fl5h':'നിങ്ങളെ എങ്ങനെ ബന്ധപ്പെടണം എന്ന് മനസ്സിലാക്കാൻ ഇത് സഹായിക്കും',
 'fl6':'വേറെ ഏതെങ്കിലും?',
 'fl6h':'കൂടുതൽ സേവ് ചെയ്യാൻ? നല്ല ജോലി കിട്ടാൻ? തട്ടിപ്പ് ഉണ്ടായോ? എതും എഴുതൂ — അല്ലെങ്കിൽ ഒഴിഞ്ഞ് വിടൂ.',
+'fl7':'റഫറൽ കോഡ്',
+'fl7h':'കോഡ് ഇല്ലെങ്കിൽ പൂജ്യം (0) നൽകൂ',
 'f-btn':'അയക്കൂ — ഉടൻ ബന്ധപ്പെടാം',
 'f-priv':'ഞാൻ മാത്രം ഇത് കാണും. മറ്റാർക്കും കൊടുക്കില്ല.',
 'suc-title':'നന്ദി. ഉടൻ WhatsApp-ൽ ബന്ധപ്പെടാം.',
@@ -774,6 +790,8 @@ ne:{
 'fl5h':'यसले मलाई तपाईंसँग कसरी सम्पर्क गर्ने भनेर बुझ्न मद्दत गर्छ',
 'fl6':'अरू केही?',
 'fl6h':'बढी बचत गर्न चाहनुहुन्छ? राम्रो काम खोज्दै हुनुहुन्छ? ठगीको शिकार हुनुभयो? जेसुकै लेख्नुहोस् — वा खाली छोड्नुहोस्।',
+'fl7':'रेफरल कोड',
+'fl7h':'कोड छैन भने शून्य (0) लेख्नुहोस्',
 'f-btn':'पठाउनुहोस् — चाँडै सम्पर्क गर्छु',
 'f-priv':'मैले मात्र यो देख्छु। कसैलाई दिँदिनँ।',
 'suc-title':'धन्यवाद। चाँडै WhatsApp मा सम्पर्क गर्छु।',
@@ -828,6 +846,8 @@ bn:{
 'fl5h':'এটা আমাকে বুঝতে সাহায্য করে আপনার সাথে কীভাবে যোগাযোগ করব',
 'fl6':'আর কিছু?',
 'fl6h':'আরও সঞ্চয় করতে চান? ভালো কাজ খুঁজছেন? প্রতারিত হয়েছেন? যা খুশি লিখুন — বা খালি রাখুন।',
+'fl7':'রেফারেল কোড',
+'fl7h':'কোড না থাকলে শূন্য (0) লিখুন',
 'f-btn':'পাঠান — শীঘ্রই যোগাযোগ করব',
 'f-priv':'শুধু আমি এটা দেখব। কাউকে দেব না।',
 'suc-title':'ধন্যবাদ। শীঘ্রই WhatsApp-এ যোগাযোগ করব।',
@@ -882,6 +902,8 @@ tl:{
 'fl5h':'Tinutulungan nito akong malaman kung paano makipag-ugnayan sa iyo',
 'fl6':'May iba pa?',
 'fl6h':'Gustong makatipid nang higit? Naghahanap ng mas magandang trabaho? Nabiktima ng scam? Isulat ang kahit ano — o iwanang blangko.',
+'fl7':'Referral code',
+'fl7h':'Ilagay ang zero (0) kung wala kang referral code',
 'f-btn':'Ipadala — makikipag-ugnayan ako sa lalong madaling panahon',
 'f-priv':'Ako lang ang makakakita nito. Hindi ko ito ibibigay sa iba.',
 'suc-title':'Salamat. Makikipag-ugnayan ako sa iyo sa WhatsApp.',
