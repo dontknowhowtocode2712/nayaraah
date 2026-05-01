@@ -20,150 +20,87 @@
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:var(--font);color:var(--text);font-size:16px;line-height:1.6;background:var(--bg);-webkit-font-smoothing:antialiased}
 a{color:var(--g)}
-
 nav{padding:12px 16px;border-bottom:1px solid var(--border);background:var(--bg);position:sticky;top:0;z-index:100}
 .nav-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
 .logo{font-family:var(--serif);font-size:22px;color:var(--gd);font-weight:400;letter-spacing:-0.3px}
 .logo span{color:var(--g)}
 .nav-free{font-size:12px;color:var(--muted)}
 .lang-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}
-.lb{font-size:12px;padding:8px 4px;border:1px solid var(--border);border-radius:6px;
-  background:transparent;cursor:pointer;color:var(--muted);font-family:var(--font);
-  text-align:center;-webkit-tap-highlight-color:transparent;touch-action:manipulation;
-  min-height:36px;display:flex;align-items:center;justify-content:center}
+.lb{font-size:12px;padding:8px 4px;border:1px solid var(--border);border-radius:6px;background:transparent;cursor:pointer;color:var(--muted);font-family:var(--font);text-align:center;-webkit-tap-highlight-color:transparent;touch-action:manipulation;min-height:36px;display:flex;align-items:center;justify-content:center}
 .lb.active{background:var(--gl);color:var(--gd);border-color:var(--gb);font-weight:500}
-
 .hero{background:var(--gl);padding:32px 16px 24px;text-align:center}
-.no-sell{display:inline-flex;align-items:center;gap:8px;background:#fff;
-  border:1px solid var(--gb);border-radius:20px;padding:6px 14px;
-  font-size:13px;color:var(--gm);margin-bottom:14px;font-weight:500}
+.no-sell{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--gb);border-radius:20px;padding:6px 14px;font-size:13px;color:var(--gm);margin-bottom:14px;font-weight:500}
 .no-sell-dot{width:8px;height:8px;border-radius:50%;background:var(--g);flex-shrink:0}
-.hero h1{font-family:var(--serif);font-size:26px;color:var(--gd);line-height:1.3;
-  margin-bottom:10px;font-weight:400}
+.hero h1{font-family:var(--serif);font-size:26px;color:var(--gd);line-height:1.3;margin-bottom:10px;font-weight:400}
 .hero p{font-size:15px;color:var(--gm);max-width:340px;margin:0 auto 20px;line-height:1.65}
-.cta-btn{display:inline-block;background:var(--g);color:#fff;padding:14px 32px;
-  border-radius:8px;font-size:15px;font-weight:500;cursor:pointer;border:none;
-  font-family:var(--font);text-decoration:none;-webkit-tap-highlight-color:transparent;
-  touch-action:manipulation;min-height:48px;line-height:1.2}
-
+.cta-btn{display:inline-block;background:var(--g);color:#fff;padding:14px 32px;border-radius:8px;font-size:15px;font-weight:500;cursor:pointer;border:none;font-family:var(--font);text-decoration:none;-webkit-tap-highlight-color:transparent;touch-action:manipulation;min-height:48px;line-height:1.2}
 .promise{display:grid;grid-template-columns:repeat(3,1fr);background:var(--gd)}
-.promise-item{padding:14px 8px;text-align:center;color:var(--gl);font-size:12px;
-  line-height:1.4;border-right:1px solid rgba(255,255,255,0.1)}
+.promise-item{padding:14px 8px;text-align:center;color:var(--gl);font-size:12px;line-height:1.4;border-right:1px solid rgba(255,255,255,0.1)}
 .promise-item:last-child{border-right:none}
-.promise-item strong{display:block;font-size:20px;font-family:var(--serif);
-  color:#fff;margin-bottom:2px;font-weight:400}
-
+.promise-item strong{display:block;font-size:20px;font-family:var(--serif);color:#fff;margin-bottom:2px;font-weight:400}
 .section{padding:24px 16px;border-bottom:1px solid var(--border)}
-.sec-label{font-size:11px;font-weight:600;text-transform:uppercase;
-  letter-spacing:0.07em;color:var(--g);margin-bottom:4px}
-.sec-title{font-family:var(--serif);font-size:20px;color:var(--text);
-  margin-bottom:10px;line-height:1.3;font-weight:400}
+.sec-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.07em;color:var(--g);margin-bottom:4px}
+.sec-title{font-family:var(--serif);font-size:20px;color:var(--text);margin-bottom:10px;line-height:1.3;font-weight:400}
 .body-text{font-size:14px;color:var(--muted);line-height:1.7}
-
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
-.about-card{background:var(--surface);border-radius:8px;padding:12px;
-  font-size:13px;color:var(--muted);line-height:1.5}
+.about-card{background:var(--surface);border-radius:8px;padding:12px;font-size:13px;color:var(--muted);line-height:1.5}
 .about-card strong{display:block;font-size:13px;font-weight:600;color:var(--text);margin-bottom:3px}
-.trust-box{background:#fff;border:1px solid var(--gb);border-radius:8px;
-  padding:14px;margin-top:14px;font-size:13px;color:var(--gd);line-height:1.6}
-
+.trust-box{background:#fff;border:1px solid var(--gb);border-radius:8px;padding:14px;margin-top:14px;font-size:13px;color:var(--gd);line-height:1.6}
 .calc-box{background:var(--surface);border-radius:10px;padding:16px;margin-top:14px}
 .calc-row{margin-bottom:16px}
-.calc-row label{display:flex;justify-content:space-between;font-size:13px;
-  color:var(--muted);margin-bottom:8px}
+.calc-row label{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);margin-bottom:8px}
 .calc-row label span{font-weight:600;color:var(--text)}
-input[type=range]{width:100%;height:6px;-webkit-appearance:none;appearance:none;
-  background:var(--gb);border-radius:3px;outline:none;cursor:pointer;
-  touch-action:pan-y}
-input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;
-  border-radius:50%;background:var(--g);cursor:pointer;border:2px solid #fff;
-  box-shadow:0 1px 3px rgba(0,0,0,0.2)}
-input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;
-  background:var(--g);cursor:pointer;border:2px solid #fff}
+input[type=range]{width:100%;height:6px;-webkit-appearance:none;appearance:none;background:var(--gb);border-radius:3px;outline:none;cursor:pointer;touch-action:pan-y}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;border-radius:50%;background:var(--g);cursor:pointer;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,0.2)}
+input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;background:var(--g);cursor:pointer;border:2px solid #fff}
 .calc-result{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px}
-.result-card{background:var(--bg);border-radius:8px;padding:14px;
-  border:1px solid var(--border);text-align:center}
+.result-card{background:var(--bg);border-radius:8px;padding:14px;border:1px solid var(--border);text-align:center}
 .result-n{font-family:var(--serif);font-size:22px;color:var(--g);font-weight:400}
 .result-l{font-size:12px;color:var(--muted);margin-top:3px}
-
 .tip-list{display:flex;flex-direction:column;gap:8px;margin-top:14px}
-.tip{display:flex;gap:12px;align-items:flex-start;background:var(--surface);
-  border-radius:8px;padding:14px}
+.tip{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border-radius:8px;padding:14px}
 .tip-icon{font-size:20px;flex-shrink:0;line-height:1;margin-top:1px}
 .tip-text strong{display:block;font-size:14px;font-weight:600;color:var(--text);margin-bottom:3px}
 .tip-text span{font-size:13px;color:var(--muted);line-height:1.6}
-
 .remit-controls{display:flex;gap:8px;margin-top:14px;align-items:flex-end;flex-wrap:wrap}
 .remit-field{display:flex;flex-direction:column;gap:5px}
 .remit-field label{font-size:12px;color:var(--muted);font-weight:500}
-.amount-wrap{display:flex;align-items:center;border:1px solid var(--border);
-  border-radius:8px;background:var(--bg);overflow:hidden;height:48px}
-.amount-prefix{padding:0 10px;font-size:14px;color:var(--muted);
-  border-right:1px solid var(--border);height:100%;display:flex;align-items:center;flex-shrink:0}
-.amount-input{padding:0 10px;font-size:16px;font-weight:500;width:100%;
-  border:none;outline:none;height:100%;font-family:var(--font);color:var(--text);background:var(--bg)}
-.country-select{padding:0 36px 0 12px;border:1px solid var(--border);border-radius:8px;
-  font-size:14px;font-family:var(--font);background:var(--bg);color:var(--text);
-  height:48px;-webkit-appearance:none;appearance:none;flex:1;min-width:140px;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23555' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
-  background-repeat:no-repeat;background-position:right 12px center;background-color:var(--bg)}
+.amount-wrap{display:flex;align-items:center;border:1px solid var(--border);border-radius:8px;background:var(--bg);overflow:hidden;height:48px}
+.amount-prefix{padding:0 10px;font-size:14px;color:var(--muted);border-right:1px solid var(--border);height:100%;display:flex;align-items:center;flex-shrink:0}
+.amount-input{padding:0 10px;font-size:16px;font-weight:500;width:100%;border:none;outline:none;height:100%;font-family:var(--font);color:var(--text);background:var(--bg)}
+.country-select{padding:0 36px 0 12px;border:1px solid var(--border);border-radius:8px;font-size:14px;font-family:var(--font);background:var(--bg);color:var(--text);height:48px;-webkit-appearance:none;appearance:none;flex:1;min-width:140px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23555' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;background-color:var(--bg)}
 .remit-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:14px}
 .remit-table{width:100%;border-collapse:collapse;font-size:14px;table-layout:fixed;min-width:280px}
-.remit-table th{text-align:left;font-size:11px;font-weight:600;color:var(--muted);
-  padding:6px 8px;border-bottom:1px solid var(--border);text-transform:uppercase;
-  letter-spacing:0.04em;white-space:nowrap}
-.remit-table td{padding:12px 8px;border-bottom:1px solid var(--border);
-  color:var(--text);word-break:break-word}
+.remit-table th{text-align:left;font-size:11px;font-weight:600;color:var(--muted);padding:6px 8px;border-bottom:1px solid var(--border);text-transform:uppercase;letter-spacing:0.04em;white-space:nowrap}
+.remit-table td{padding:12px 8px;border-bottom:1px solid var(--border);color:var(--text);word-break:break-word}
 .remit-table tr:last-child td{border-bottom:none}
-.best-pill{background:var(--gl);color:var(--gd);font-size:11px;padding:2px 7px;
-  border-radius:10px;font-weight:600;white-space:nowrap;display:inline-block;margin-top:2px}
+.best-pill{background:var(--gl);color:var(--gd);font-size:11px;padding:2px 7px;border-radius:10px;font-weight:600;white-space:nowrap;display:inline-block;margin-top:2px}
 .remit-note{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.6}
-
 .scam-list{display:flex;flex-direction:column;gap:8px;margin-top:14px}
-.scam{display:flex;gap:12px;align-items:flex-start;background:var(--rl);
-  border-radius:8px;padding:14px;border:1px solid #F7C1C1}
+.scam{display:flex;gap:12px;align-items:flex-start;background:var(--rl);border-radius:8px;padding:14px;border:1px solid #F7C1C1}
 .scam-icon{font-size:18px;flex-shrink:0;line-height:1;margin-top:1px}
 .scam strong{display:block;font-size:14px;font-weight:600;color:var(--rd);margin-bottom:3px}
 .scam span{font-size:13px;color:#7a1f1f;line-height:1.6}
-
-.form-trust{background:var(--gl);border:1px solid var(--gb);border-radius:8px;
-  padding:14px;margin-bottom:16px;font-size:14px;color:var(--gd);line-height:1.6}
+.form-trust{background:var(--gl);border:1px solid var(--gb);border-radius:8px;padding:14px;margin-bottom:16px;font-size:14px;color:var(--gd);line-height:1.6}
 .form-trust strong{display:block;font-size:15px;margin-bottom:4px}
 .form-box{display:flex;flex-direction:column;gap:16px}
 .field{display:flex;flex-direction:column;gap:6px}
 .field label{font-size:14px;font-weight:600;color:var(--text)}
 .field .hint{font-size:12px;color:var(--muted);line-height:1.5}
-.field input,.field select,.field textarea{
-  padding:12px;border:1px solid var(--border);border-radius:8px;
-  font-size:16px;font-family:var(--font);background:var(--bg);color:var(--text);
-  width:100%;-webkit-appearance:none;appearance:none;min-height:48px;
-  -webkit-tap-highlight-color:transparent}
+.field input,.field select,.field textarea{padding:12px;border:1px solid var(--border);border-radius:8px;font-size:16px;font-family:var(--font);background:var(--bg);color:var(--text);width:100%;-webkit-appearance:none;appearance:none;min-height:48px;-webkit-tap-highlight-color:transparent}
 .field textarea{height:100px;resize:none;min-height:100px;line-height:1.5}
-.field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23555' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
-  background-repeat:no-repeat;background-position:right 12px center;padding-right:36px;background-color:var(--bg)}
+.field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23555' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:36px;background-color:var(--bg)}
 .eng-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
-.eng-btn{padding:10px 6px;border:1px solid var(--border);border-radius:8px;
-  font-size:13px;font-family:var(--font);background:var(--bg);color:var(--muted);
-  cursor:pointer;text-align:center;min-height:44px;-webkit-tap-highlight-color:transparent;
-  touch-action:manipulation}
+.eng-btn{padding:10px 6px;border:1px solid var(--border);border-radius:8px;font-size:13px;font-family:var(--font);background:var(--bg);color:var(--muted);cursor:pointer;text-align:center;min-height:44px;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
 .eng-btn.selected{background:var(--gl);color:var(--gd);border-color:var(--gb);font-weight:600}
-.submit-btn{background:var(--g);color:#fff;padding:16px;border-radius:8px;
-  font-size:16px;font-weight:600;border:none;cursor:pointer;font-family:var(--font);
-  width:100%;min-height:52px;-webkit-tap-highlight-color:transparent;
-  touch-action:manipulation;line-height:1.2}
+.submit-btn{background:var(--g);color:#fff;padding:16px;border-radius:8px;font-size:16px;font-weight:600;border:none;cursor:pointer;font-family:var(--font);width:100%;min-height:52px;-webkit-tap-highlight-color:transparent;touch-action:manipulation;line-height:1.2}
 .privacy{font-size:12px;color:var(--muted);text-align:center;margin-top:8px;line-height:1.6}
-.success-box{background:var(--gl);border:1px solid var(--gb);border-radius:10px;
-  padding:24px;text-align:center;display:none}
-.success-box h3{font-family:var(--serif);font-size:22px;color:var(--gd);
-  margin-bottom:10px;font-weight:400}
+.success-box{background:var(--gl);border:1px solid var(--gb);border-radius:10px;padding:24px;text-align:center;display:none}
+.success-box h3{font-family:var(--serif);font-size:22px;color:var(--gd);margin-bottom:10px;font-weight:400}
 .success-box p{font-size:14px;color:var(--gm);line-height:1.7}
-
-footer{padding:20px 16px;text-align:center;font-size:12px;color:var(--muted);
-  border-top:1px solid var(--border);line-height:1.8}
-
+footer{padding:20px 16px;text-align:center;font-size:12px;color:var(--muted);border-top:1px solid var(--border);line-height:1.8}
 .page{max-width:520px;margin:0 auto}
 .rtl{direction:rtl}
-
 @media(max-width:360px){
   .hero h1{font-size:22px}
   .lang-grid{grid-template-columns:repeat(4,1fr)}
@@ -328,21 +265,26 @@ footer{padding:20px 16px;text-align:center;font-size:12px;color:var(--muted);
     <div class="field">
       <label id="fl3">Country you are from</label>
       <select id="f-country">
-        <option value="" disabled selected>Choose your country</option>
-        <option>India</option><option>Pakistan</option><option>Bangladesh</option>
-        <option>Nepal</option><option>Sri Lanka</option><option>Philippines</option><option>Other</option>
+        <option value="" disabled selected id="opt-country-ph">Choose your country</option>
+        <option value="India" id="opt-india">India</option>
+        <option value="Pakistan" id="opt-pakistan">Pakistan</option>
+        <option value="Bangladesh" id="opt-bangladesh">Bangladesh</option>
+        <option value="Nepal" id="opt-nepal">Nepal</option>
+        <option value="Sri Lanka" id="opt-srilanka">Sri Lanka</option>
+        <option value="Philippines" id="opt-philippines">Philippines</option>
+        <option value="Other" id="opt-other">Other</option>
       </select>
     </div>
     <div class="field">
       <label id="fl4">What would you like assistance with?</label>
       <select id="f-help">
-        <option value="" disabled selected>Choose one</option>
-        <option>Saving more of my salary</option>
-        <option>Sending money home for less</option>
-        <option>Safe ways to invest my savings</option>
-        <option>I think I have been scammed</option>
-        <option>Finding better job opportunities</option>
-        <option>General financial advice</option>
+        <option value="" disabled selected id="opt-help-ph">Choose one</option>
+        <option value="Saving more of my salary" id="opt-h1">Saving more of my salary</option>
+        <option value="Sending money home for less" id="opt-h2">Sending money home for less</option>
+        <option value="Safe ways to invest my savings" id="opt-h3">Safe ways to invest my savings</option>
+        <option value="I think I have been scammed" id="opt-h4">I think I have been scammed</option>
+        <option value="Finding better job opportunities" id="opt-h5">Finding better job opportunities</option>
+        <option value="General financial advice" id="opt-h6">General financial advice</option>
       </select>
     </div>
     <div class="field">
@@ -401,10 +343,7 @@ function calcRemit(){
 
 fetch('rates.json')
   .then(function(r){return r.json();})
-  .then(function(data){
-    rates=data;
-    calcRemit();
-  })
+  .then(function(data){rates=data;calcRemit();})
   .catch(function(){
     document.getElementById('remit-body').innerHTML='<tr><td colspan="4" style="color:var(--muted);font-size:13px;padding:12px 8px">Rates unavailable — please check provider websites directly.</td></tr>';
   });
@@ -413,8 +352,7 @@ function calcSavings(){
   var m=parseInt(document.getElementById('monthly').value);
   var y=parseInt(document.getElementById('years').value);
   var r=parseFloat(document.getElementById('rate').value)/100/12;
-  var n=y*12;
-  var tot=0;
+  var n=y*12;var tot=0;
   for(var i=0;i<n;i++){tot=(tot+m)*(1+r);}
   var interest=tot-m*n;
   document.getElementById('monthly-out').textContent='AED '+m;
@@ -443,24 +381,112 @@ function submitForm(){
   }
   var msg=document.getElementById('f-msg').value.trim();
   var payload={name:name,whatsapp:wa,country:country,help:help,english:engLevel||'Not selected',referral:ref,message:msg,timestamp:new Date().toISOString()};
-  /*
-  GOOGLE APPS SCRIPT — paste into Extensions > Apps Script in your Google Sheet, then Deploy > New deployment > Web app > Anyone can access:
-
-  function doPost(e) {
-    var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-    var data = JSON.parse(e.postData.contents);
-    sheet.appendRow([data.timestamp, data.name, data.whatsapp, data.country, data.help, data.english, data.message]);
-    return ContentService.createTextOutput('OK');
-  }
-
-  Then replace YOUR_GOOGLE_APPS_SCRIPT_URL below with the URL Google gives you.
-  */
   var SHEET_URL='https://formspree.io/f/xqegregr';
   fetch(SHEET_URL,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)}).catch(function(){});
   document.getElementById('the-form').style.display='none';
   document.getElementById('success-box').style.display='block';
   document.getElementById('contact').scrollIntoView({behavior:'smooth'});
 }
+
+// Dropdown option translations
+var D={
+  en:{
+    'opt-country-ph':'Choose your country',
+    'opt-india':'India','opt-pakistan':'Pakistan','opt-bangladesh':'Bangladesh',
+    'opt-nepal':'Nepal','opt-srilanka':'Sri Lanka','opt-philippines':'Philippines','opt-other':'Other',
+    'opt-help-ph':'Choose one',
+    'opt-h1':'Saving more of my salary',
+    'opt-h2':'Sending money home for less',
+    'opt-h3':'Safe ways to invest my savings',
+    'opt-h4':'I think I have been scammed',
+    'opt-h5':'Finding better job opportunities',
+    'opt-h6':'General financial advice'
+  },
+  hi:{
+    'opt-country-ph':'अपना देश चुनें',
+    'opt-india':'भारत','opt-pakistan':'पाकिस्तान','opt-bangladesh':'बांग्लादेश',
+    'opt-nepal':'नेपाल','opt-srilanka':'श्रीलंका','opt-philippines':'फिलीपींस','opt-other':'अन्य',
+    'opt-help-ph':'एक चुनें',
+    'opt-h1':'अपनी तनख्वाह में से ज़्यादा बचाना',
+    'opt-h2':'घर कम पैसों में पैसे भेजना',
+    'opt-h3':'अपनी बचत निवेश करने के सुरक्षित तरीके',
+    'opt-h4':'मुझे लगता है मेरे साथ धोखा हुआ है',
+    'opt-h5':'बेहतर नौकरी के अवसर ढूंढना',
+    'opt-h6':'सामान्य वित्तीय सलाह'
+  },
+  ur:{
+    'opt-country-ph':'اپنا ملک چنیں',
+    'opt-india':'بھارت','opt-pakistan':'پاکستان','opt-bangladesh':'بنگلہ دیش',
+    'opt-nepal':'نیپال','opt-srilanka':'سری لنکا','opt-philippines':'فلپائن','opt-other':'دیگر',
+    'opt-help-ph':'ایک چنیں',
+    'opt-h1':'اپنی تنخواہ میں سے زیادہ بچانا',
+    'opt-h2':'گھر کم پیسوں میں پیسے بھیجنا',
+    'opt-h3':'اپنی بچت لگانے کے محفوظ طریقے',
+    'opt-h4':'مجھے لگتا ہے میرے ساتھ دھوکہ ہوا ہے',
+    'opt-h5':'بہتر نوکری کے مواقع ڈھونڈنا',
+    'opt-h6':'عام مالی مشورہ'
+  },
+  ta:{
+    'opt-country-ph':'உங்கள் நாட்டை தேர்ந்தெடுங்கள்',
+    'opt-india':'இந்தியா','opt-pakistan':'பாகிஸ்தான்','opt-bangladesh':'வங்கதேசம்',
+    'opt-nepal':'நேபாளம்','opt-srilanka':'இலங்கை','opt-philippines':'பிலிப்பைன்ஸ்','opt-other':'மற்றவை',
+    'opt-help-ph':'ஒன்றை தேர்ந்தெடுங்கள்',
+    'opt-h1':'என் சம்பளத்தில் அதிகமாக சேமிக்க',
+    'opt-h2':'குறைந்த செலவில் வீட்டிற்கு பணம் அனுப்ப',
+    'opt-h3':'என் சேமிப்பை முதலீடு செய்ய பாதுகாப்பான வழிகள்',
+    'opt-h4':'என்னை மோசடி செய்தார்கள் என்று நினைக்கிறேன்',
+    'opt-h5':'சிறந்த வேலை வாய்ப்புகள் கண்டுபிடிக்க',
+    'opt-h6':'பொது நிதி ஆலோசனை'
+  },
+  ml:{
+    'opt-country-ph':'നിങ്ങളുടെ രാജ്യം തിരഞ്ഞെടുക്കൂ',
+    'opt-india':'ഇന്ത്യ','opt-pakistan':'പാകിസ്താൻ','opt-bangladesh':'ബംഗ്ലാദേശ്',
+    'opt-nepal':'നേപ്പാൾ','opt-srilanka':'ശ്രീലങ്ക','opt-philippines':'ഫിലിപ്പൈൻസ്','opt-other':'മറ്റുള്ളവ',
+    'opt-help-ph':'ഒന്ന് തിരഞ്ഞെടുക്കൂ',
+    'opt-h1':'എന്റെ ശമ്പളത്തിൽ നിന്ന് കൂടുതൽ സേവ് ചെയ്യാൻ',
+    'opt-h2':'കുറഞ്ഞ ചെലവിൽ വീട്ടിലേക്ക് പണം അയക്കാൻ',
+    'opt-h3':'എന്റെ സേവിംഗ്സ് നിക്ഷേപിക്കാൻ സുരക്ഷിത വഴികൾ',
+    'opt-h4':'ഞാൻ തട്ടിപ്പിന് ഇരയായി എന്ന് തോന്നുന്നു',
+    'opt-h5':'മികച്ച ജോലി അവസരങ്ങൾ കണ്ടെത്താൻ',
+    'opt-h6':'പൊതു സാമ്പത്തിക ഉപദേശം'
+  },
+  ne:{
+    'opt-country-ph':'आफ्नो देश छान्नुहोस्',
+    'opt-india':'भारत','opt-pakistan':'पाकिस्तान','opt-bangladesh':'बंगलादेश',
+    'opt-nepal':'नेपाल','opt-srilanka':'श्रीलंका','opt-philippines':'फिलिपिन्स','opt-other':'अन्य',
+    'opt-help-ph':'एउटा छान्नुहोस्',
+    'opt-h1':'मेरो तलबबाट बढी बचत गर्न',
+    'opt-h2':'कम शुल्कमा घर पैसा पठाउन',
+    'opt-h3':'मेरो बचत लगानी गर्ने सुरक्षित तरिकाहरू',
+    'opt-h4':'मलाई ठगी भएको जस्तो लाग्छ',
+    'opt-h5':'राम्रो जागिरका अवसरहरू ढूँढ्न',
+    'opt-h6':'सामान्य आर्थिक सल्लाह'
+  },
+  bn:{
+    'opt-country-ph':'আপনার দেশ বেছে নিন',
+    'opt-india':'ভারত','opt-pakistan':'পাকিস্তান','opt-bangladesh':'বাংলাদেশ',
+    'opt-nepal':'নেপাল','opt-srilanka':'শ্রীলঙ্কা','opt-philippines':'ফিলিপাইন','opt-other':'অন্যান্য',
+    'opt-help-ph':'একটি বেছে নিন',
+    'opt-h1':'আমার বেতন থেকে বেশি সঞ্চয় করতে',
+    'opt-h2':'কম খরচে বাড়িতে টাকা পাঠাতে',
+    'opt-h3':'আমার সঞ্চয় বিনিয়োগের নিরাপদ উপায়',
+    'opt-h4':'আমি মনে করি আমি প্রতারিত হয়েছি',
+    'opt-h5':'ভালো চাকরির সুযোগ খুঁজে পেতে',
+    'opt-h6':'সাধারণ আর্থিক পরামর্শ'
+  },
+  tl:{
+    'opt-country-ph':'Piliin ang iyong bansa',
+    'opt-india':'India','opt-pakistan':'Pakistan','opt-bangladesh':'Bangladesh',
+    'opt-nepal':'Nepal','opt-srilanka':'Sri Lanka','opt-philippines':'Pilipinas','opt-other':'Iba pa',
+    'opt-help-ph':'Pumili ng isa',
+    'opt-h1':'Makatipid nang higit mula sa aking sahod',
+    'opt-h2':'Magpadala ng pera sa mas mababang bayad',
+    'opt-h3':'Ligtas na paraan para mamuhunan ng aking ipon',
+    'opt-h4':'Sa tingin ko ay na-scam ako',
+    'opt-h5':'Humanap ng mas magandang trabaho',
+    'opt-h6':'Pangkalahatang payo sa pananalapi'
+  }
+};
 
 var L={
 en:{
@@ -470,16 +496,14 @@ en:{
 'h-sub':'Tips on saving, safe investing, and avoiding scams — made for hard-working people in the UAE.',
 'h-cta':'Get free help ↓',
 'p1':'people helped','p2':'always, forever','p3':'real results',
-'ab-lbl':'What is this?',
-'ab-title':'Nayaraah is free help — nothing more.',
+'ab-lbl':'What is this?','ab-title':'Nayaraah is free help — nothing more.',
 'ab-body':'I am not a bank. I am not selling anything. I am one person who has helped over 500 workers in the UAE save more money, find better jobs, and stay safe from scams. This website gives you the same tips, for free.',
 'ac1':'💰 Save money','ac1b':'Build savings even on a small salary',
 'ac2':'📈 Grow money','ac2b':'Safe, low-risk ways to grow your savings',
 'ac3':'📤 Send money home','ac3b':'Best rate, lowest fees',
 'ac4':'🛡 Avoid scams','ac4b':'Know the signs before it is too late',
 'ab-trust':'I will never ask you to pay for anything. I do not earn a commission. I have no products to sell. This exists because nobody should have to figure this out alone.',
-'calc-title':'How much can you save?',
-'calc-sub':'Move the sliders. See how small savings add up over time.',
+'calc-title':'How much can you save?','calc-sub':'Move the sliders. See how small savings add up over time.',
 'cl1':'I save each month','cl2':'For how many years','cl3':'Interest rate',
 'r-tl':'Total saved','r-il':'Extra from interest',
 'inv-title':'Grow your money without big risk',
@@ -487,11 +511,10 @@ en:{
 't1h':'High-interest savings account','t1b':'Ask your UAE bank for a savings account with interest. Some pay 2–4% per year. Your money stays safe and slowly grows.',
 't2h':'Government bonds (back home)','t2b':'India, Pakistan, Nepal and Philippines all have government savings bonds. Your money is kept by the government — very safe.',
 't3h':'Money market funds in the UAE','t3b':'Apps like Sarwa let you invest small amounts with very low risk. More growth than a savings account, still safe.',
-'rem-title':'Who gives your family the most?',
-'rem-sub':'Enter how much you want to send. See which service gives your family the most money.',
+'rem-title':'Who gives your family the most?','rem-sub':'Enter how much you want to send. See which service gives your family the most money.',
 'rl1':'Amount to send','rl2':'Sending to',
 'rh1':'Service','rh2':'Family receives','rh3':'Your fee','rh4':'Speed',
-'remit-note':'Rates updated weekly. Always check the provider\'s website before sending. Last updated: 10 Apr 2026.',
+'remit-note':'Rates updated weekly. Always check the provider\'s website before sending.',
 'sc-title':'Do not lose your money to scams',
 'sc-sub':'Scammers in the UAE target workers. These are the most common ones. If you see any of these — stop, and contact me.',
 's1h':'"Double your money" promises','s1b':'No real investment doubles your money fast. Anyone who says this is lying. Walk away.',
@@ -504,21 +527,16 @@ en:{
 'ft-body':'I know sharing personal details with a stranger can feel uncomfortable. You don\'t have to share anything you\'re not ready to. Fill in what you can — even a name and a number is enough for me to reach out.',
 'fl1':'Your name','fl2':'WhatsApp number',
 'fl2h':'I will contact you here. Include your country code — e.g. +91, +92, +63',
-'fl3':'Country you are from',
-'fl4':'What would you like assistance with?',
-'fl5':'How good is your English?',
-'fl5h':'This helps me understand how best to reach out to you',
-'fl6':'Anything else?',
-'fl6h':'Are you trying to save more? Looking for better work? Been scammed? Write anything — or leave this blank.',
-'fl7':'Referral code',
-'fl7h':'Please enter zero (0) if you do not have a referral code',
+'fl3':'Country you are from','fl4':'What would you like assistance with?',
+'fl5':'How good is your English?','fl5h':'This helps me understand how best to reach out to you',
+'fl6':'Anything else?','fl6h':'Are you trying to save more? Looking for better work? Been scammed? Write anything — or leave this blank.',
+'fl7':'Referral code','fl7h':'Please enter zero (0) if you do not have a referral code',
 'f-btn':'Send — I will be in touch soon',
 'f-priv':'Only I will see what you share here. I will never pass your details to anyone else.',
 'suc-title':'Thank you. I will message you on WhatsApp soon.',
 'suc-body':'I have received your message. I will contact you within 1–2 days. You do not need to do anything else.',
 'eng-none':'None','eng-basic':'Basic','eng-conv':'Conversational','eng-good':'Good','eng-fluent':'Fluent','eng-native':'Native'
 },
-
 hi:{
 'nav-free':'100% मुफ़्त · कुछ खरीदना नहीं',
 'h-nosell':'कुछ खरीदना नहीं। कुछ बेचना नहीं। बस मदद।',
@@ -526,16 +544,14 @@ hi:{
 'h-sub':'बचत, सुरक्षित निवेश और धोखाधड़ी से बचाव — UAE में मेहनत करने वाले लोगों के लिए।',
 'h-cta':'मुफ़्त सहायता लें ↓',
 'p1':'लोगों की सहायता','p2':'हमेशा के लिए मुफ़्त','p3':'असली नतीजे',
-'ab-lbl':'यह क्या है?',
-'ab-title':'Nayaraah मुफ़्त सहायता है — बस इतना ही।',
+'ab-lbl':'यह क्या है?','ab-title':'Nayaraah मुफ़्त सहायता है — बस इतना ही।',
 'ab-body':'मैं बैंक नहीं हूँ। मैं कुछ नहीं बेच रहा। मैं एक इंसान हूँ जिसने UAE में 500 से ज़्यादा लोगों को ज़्यादा पैसे बचाने, बेहतर काम ढूंढने और धोखे से बचने में मदद की है। यह वेबसाइट वही सलाह देती है, मुफ़्त में।',
 'ac1':'💰 पैसे बचाएं','ac1b':'छोटी तनख्वाह में भी बचत करें',
 'ac2':'📈 पैसे बढ़ाएं','ac2b':'कम जोखिम में पैसे बढ़ाने के तरीके',
 'ac3':'📤 घर पैसे भेजें','ac3b':'सबसे अच्छी दर, सबसे कम फीस',
 'ac4':'🛡 धोखे से बचें','ac4b':'नुकसान होने से पहले संकेत पहचानें',
 'ab-trust':'मैं कभी कुछ खरीदने को नहीं कहूँगा। मुझे कोई कमीशन नहीं मिलता। यह इसलिए है क्योंकि किसी को भी यह सब अकेले नहीं सोचना चाहिए।',
-'calc-title':'आप कितना बचा सकते हैं?',
-'calc-sub':'स्लाइडर हिलाएं। देखें कि छोटी बचत कैसे बढ़ती है।',
+'calc-title':'आप कितना बचा सकते हैं?','calc-sub':'स्लाइडर हिलाएं। देखें कि छोटी बचत कैसे बढ़ती है।',
 'cl1':'मैं हर महीने बचाता हूँ','cl2':'कितने साल के लिए','cl3':'ब्याज दर',
 'r-tl':'कुल बचत','r-il':'ब्याज से अतिरिक्त',
 'inv-title':'बिना बड़े जोखिम के पैसे बढ़ाएं',
@@ -543,38 +559,31 @@ hi:{
 't1h':'ज़्यादा ब्याज वाला बचत खाता','t1b':'अपने UAE बैंक से ब्याज वाला बचत खाता माँगें। कुछ बैंक 2–4% सालाना देते हैं।',
 't2h':'सरकारी बॉन्ड (घर पर)','t2b':'भारत, पाकिस्तान, नेपाल में सरकारी बचत बॉन्ड हैं। सरकार आपका पैसा रखती है — बहुत सुरक्षित।',
 't3h':'UAE में मनी मार्केट फंड','t3b':'Sarwa जैसे ऐप से आप कम पैसों में कम जोखिम के साथ निवेश कर सकते हैं।',
-'rem-title':'कौन आपके परिवार को सबसे ज़्यादा देता है?',
-'rem-sub':'आप कितना भेजना चाहते हैं? देखें किस सेवा से परिवार को ज़्यादा मिलेगा।',
+'rem-title':'कौन आपके परिवार को सबसे ज़्यादा देता है?','rem-sub':'आप कितना भेजना चाहते हैं? देखें किस सेवा से परिवार को ज़्यादा मिलेगा।',
 'rl1':'भेजने की रकम','rl2':'कहाँ भेज रहे हैं',
 'rh1':'सेवा','rh2':'परिवार को मिलेगा','rh3':'आपकी फीस','rh4':'समय',
 'remit-note':'दरें हर हफ्ते अपडेट होती हैं। भेजने से पहले वेबसाइट ज़रूर देखें।',
 'sc-title':'धोखाधड़ी में अपना पैसा मत गँवाएं',
-'sc-sub':'UAE में मज़दूरों को अक्सर निशाना बनाया जाता है। यह सबसे आम धोखे हैं। अगर ऐसा दिखे — रुकें और मुझसे संपर्क करें।',
-'s1h':'"पैसा दोगुना" करने का वादा','s1b':'कोई भी असली निवेश तेज़ी से पैसा दोगुना नहीं करता। जो यह कहे — झूठा है। वहाँ से चले जाएं।',
-'s2h':'पासपोर्ट या एमिरेट्स ID माँगना','s2b':'केवल बैंक और सरकारी दफ्तर असली दस्तावेज़ माँगते हैं। कोई निवेश सलाहकार नहीं माँगता।',
-'s3h':'WhatsApp निवेश ग्रुप','s3b':'धोखेबाज़ धीरे-धीरे विश्वास बनाते हैं, फिर पैसे माँगते हैं। असली निवेश इस तरह नहीं बेचा जाता।',
+'sc-sub':'UAE में मज़दूरों को अक्सर निशाना बनाया जाता है। अगर ऐसा दिखे — रुकें और मुझसे संपर्क करें।',
+'s1h':'"पैसा दोगुना" करने का वादा','s1b':'कोई भी असली निवेश तेज़ी से पैसा दोगुना नहीं करता। जो यह कहे — झूठा है।',
+'s2h':'पासपोर्ट या एमिरेट्स ID माँगना','s2b':'केवल बैंक और सरकारी दफ्तर असली दस्तावेज़ माँगते हैं।',
+'s3h':'WhatsApp निवेश ग्रुप','s3b':'धोखेबाज़ धीरे-धीरे विश्वास बनाते हैं, फिर पैसे माँगते हैं।',
 's4h':'पैसा पाने के लिए पैसा देना','s4b':'जो भी पहले पैसा माँगे, बाद में देने का वादा करके — वह हमेशा धोखा है।',
 's5h':'बहुत अच्छे लगने वाले जॉब ऑफर','s5b':'ज़्यादा पैसा, आसान काम, और पहले पैसा माँगना — धोखा है।',
-'f-title':'यह अकेले सोचने की ज़रूरत नहीं',
-'ft-head':'भरने से पहले एक बात',
-'ft-body':'मैं समझता हूँ कि किसी अनजान से निजी जानकारी शेयर करना असहज लग सकता है। आपको वह नहीं बताना जो आप तैयार नहीं हैं। जो भर सकें भरें — बस एक नाम और नंबर भी काफी है।',
+'f-title':'यह अकेले सोचने की ज़रूरत नहीं','ft-head':'भरने से पहले एक बात',
+'ft-body':'मैं समझता हूँ कि किसी अनजान से निजी जानकारी शेयर करना असहज लग सकता है। जो भर सकें भरें — बस एक नाम और नंबर भी काफी है।',
 'fl1':'आपका नाम','fl2':'WhatsApp नंबर',
 'fl2h':'मैं यहाँ संपर्क करूँगा। देश कोड डालें — जैसे +91',
-'fl3':'आप किस देश से हैं',
-'fl4':'आप किस चीज़ में सहायता चाहेंगे?',
-'fl5':'आपकी अंग्रेज़ी कैसी है?',
-'fl5h':'इससे मुझे समझ आएगा कि आपसे कैसे बात करूँ',
-'fl6':'और कुछ?',
-'fl6h':'ज़्यादा बचाना चाहते हैं? बेहतर काम ढूंढ रहे हैं? धोखे का शिकार हुए? कुछ भी लिखें — या खाली छोड़ दें।',
-'fl7':'रेफरल कोड',
-'fl7h':'अगर आपके पास कोड नहीं है तो शून्य (0) लिखें',
+'fl3':'आप किस देश से हैं','fl4':'आप किस चीज़ में सहायता चाहेंगे?',
+'fl5':'आपकी अंग्रेज़ी कैसी है?','fl5h':'इससे मुझे समझ आएगा कि आपसे कैसे बात करूँ',
+'fl6':'और कुछ?','fl6h':'ज़्यादा बचाना चाहते हैं? बेहतर काम ढूंढ रहे हैं? धोखे का शिकार हुए? कुछ भी लिखें — या खाली छोड़ दें।',
+'fl7':'रेफरल कोड','fl7h':'अगर आपके पास कोड नहीं है तो शून्य (0) लिखें',
 'f-btn':'भेजें — मैं जल्द संपर्क करूँगा',
 'f-priv':'केवल मैं यह देखूँगा। मैं कभी किसी को नहीं दूँगा।',
 'suc-title':'शुक्रिया। मैं जल्द WhatsApp पर संपर्क करूँगा।',
 'suc-body':'आपका संदेश मिल गया। 1–2 दिन में संपर्क करूँगा।',
 'eng-none':'बिल्कुल नहीं','eng-basic':'थोड़ी','eng-conv':'बातचीत लायक','eng-good':'अच्छी','eng-fluent':'बहुत अच्छी','eng-native':'मातृभाषा जैसी'
 },
-
 ur:{
 'nav-free':'100% مفت · کچھ خریدنا نہیں',
 'h-nosell':'کچھ خریدنا نہیں۔ کچھ بیچنا نہیں۔ صرف مدد۔',
@@ -582,55 +591,46 @@ ur:{
 'h-sub':'بچت، محفوظ سرمایہ کاری اور دھوکہ دہی سے بچاؤ — UAE میں محنت کرنے والے لوگوں کے لیے۔',
 'h-cta':'مفت مدد لیں ↓',
 'p1':'افراد کی مدد','p2':'ہمیشہ مفت','p3':'اصلی نتائج',
-'ab-lbl':'یہ کیا ہے؟',
-'ab-title':'Nayaraah مفت مدد ہے — بس اتنا ہی۔',
-'ab-body':'میں بینک نہیں ہوں۔ میں کچھ نہیں بیچ رہا۔ میں نے UAE میں 500 سے زیادہ لوگوں کو زیادہ پیسے بچانے، بہتر کام ڈھونڈنے اور دھوکے سے محفوظ رہنے میں مدد کی ہے۔ یہ ویب سائٹ وہی مشورے مفت میں دیتی ہے۔',
+'ab-lbl':'یہ کیا ہے؟','ab-title':'Nayaraah مفت مدد ہے — بس اتنا ہی۔',
+'ab-body':'میں بینک نہیں ہوں۔ میں کچھ نہیں بیچ رہا۔ میں نے UAE میں 500 سے زیادہ لوگوں کو مدد کی ہے۔ یہ ویب سائٹ وہی مشورے مفت میں دیتی ہے۔',
 'ac1':'💰 پیسے بچائیں','ac1b':'چھوٹی تنخواہ میں بھی بچت کریں',
 'ac2':'📈 پیسے بڑھائیں','ac2b':'کم خطرے میں پیسے بڑھانے کے طریقے',
 'ac3':'📤 گھر پیسے بھیجیں','ac3b':'بہترین شرح، کم سے کم فیس',
 'ac4':'🛡 دھوکے سے بچیں','ac4b':'نقصان ہونے سے پہلے علامات پہچانیں',
 'ab-trust':'میں کبھی کچھ خریدنے کو نہیں کہوں گا۔ مجھے کوئی کمیشن نہیں ملتا۔ یہ اس لیے ہے کیونکہ کسی کو بھی یہ سب اکیلے نہیں سوچنا چاہیے۔',
-'calc-title':'آپ کتنا بچا سکتے ہیں؟',
-'calc-sub':'سلائیڈر حرکت کریں اور دیکھیں کہ چھوٹی بچت کیسے بڑھتی ہے۔',
+'calc-title':'آپ کتنا بچا سکتے ہیں؟','calc-sub':'سلائیڈر حرکت کریں اور دیکھیں۔',
 'cl1':'میں ہر مہینے بچاتا ہوں','cl2':'کتنے سالوں کے لیے','cl3':'سود کی شرح',
 'r-tl':'کل بچت','r-il':'سود سے اضافی',
 'inv-title':'بڑے خطرے کے بغیر پیسے بڑھائیں',
-'inv-sub':'آپ کو اپنی بچت کو خطرے میں نہیں ڈالنا۔ یہ آپشنز محفوظ اور آسان ہیں۔',
+'inv-sub':'آپ کو اپنی بچت کو خطرے میں نہیں ڈالنا۔ یہ آپشنز محفوظ ہیں۔',
 't1h':'زیادہ سود والا بچت اکاؤنٹ','t1b':'اپنے UAE بینک سے سود والا بچت اکاؤنٹ مانگیں۔ کچھ بینک 2–4% سالانہ دیتے ہیں۔',
-'t2h':'سرکاری بانڈ (گھر پر)','t2b':'پاکستان، بھارت، نیپال میں سرکاری بچت بانڈ ہیں۔ حکومت آپ کا پیسہ رکھتی ہے — بہت محفوظ۔',
+'t2h':'سرکاری بانڈ (گھر پر)','t2b':'پاکستان، بھارت، نیپال میں سرکاری بچت بانڈ ہیں۔ بہت محفوظ۔',
 't3h':'UAE میں منی مارکیٹ فنڈ','t3b':'Sarwa جیسی ایپ سے کم پیسوں میں کم خطرے کے ساتھ سرمایہ کاری کریں۔',
-'rem-title':'کون آپ کے گھر والوں کو سب سے زیادہ دیتا ہے؟',
-'rem-sub':'آپ کتنا بھیجنا چاہتے ہیں؟ دیکھیں کس سروس سے زیادہ ملے گا۔',
+'rem-title':'کون آپ کے گھر والوں کو سب سے زیادہ دیتا ہے؟','rem-sub':'آپ کتنا بھیجنا چاہتے ہیں؟',
 'rl1':'بھیجنے کی رقم','rl2':'کہاں بھیج رہے ہیں',
 'rh1':'سروس','rh2':'گھر والوں کو ملے گا','rh3':'آپ کی فیس','rh4':'وقت',
 'remit-note':'شرحیں ہر ہفتے اپڈیٹ ہوتی ہیں۔ بھیجنے سے پہلے ویب سائٹ ضرور دیکھیں۔',
 'sc-title':'دھوکہ دہی میں اپنا پیسہ مت گنوائیں',
-'sc-sub':'UAE میں مزدوروں کو اکثر نشانہ بنایا جاتا ہے۔ یہ سب سے عام دھوکے ہیں۔ اگر ایسا نظر آئے — رکیں اور مجھ سے رابطہ کریں۔',
-'s1h':'"پیسہ دوگنا" کرنے کا وعدہ','s1b':'کوئی بھی اصلی سرمایہ کاری تیزی سے پیسہ دوگنا نہیں کرتی۔ جو یہ کہے — جھوٹا ہے۔ وہاں سے چلے جائیں۔',
-'s2h':'پاسپورٹ یا ایمیریٹس ID مانگنا','s2b':'صرف بینک اور سرکاری دفاتر اصل دستاویزات مانگتے ہیں۔ کوئی سرمایہ کاری مشیر نہیں مانگتا۔',
-'s3h':'WhatsApp سرمایہ کاری گروپ','s3b':'دھوکہ باز آہستہ آہستہ اعتماد بناتے ہیں، پھر پیسے مانگتے ہیں۔ اصلی سرمایہ کاری اس طرح نہیں بیچی جاتی۔',
+'sc-sub':'UAE میں مزدوروں کو اکثر نشانہ بنایا جاتا ہے۔ اگر ایسا نظر آئے — رکیں۔',
+'s1h':'"پیسہ دوگنا" کرنے کا وعدہ','s1b':'کوئی بھی اصلی سرمایہ کاری تیزی سے پیسہ دوگنا نہیں کرتی۔ جو یہ کہے — جھوٹا ہے۔',
+'s2h':'پاسپورٹ یا ایمیریٹس ID مانگنا','s2b':'صرف بینک اور سرکاری دفاتر اصل دستاویزات مانگتے ہیں۔',
+'s3h':'WhatsApp سرمایہ کاری گروپ','s3b':'دھوکہ باز آہستہ آہستہ اعتماد بناتے ہیں، پھر پیسے مانگتے ہیں۔',
 's4h':'پیسہ پانے کے لیے پیسہ دینا','s4b':'جو بھی پہلے پیسہ مانگے بعد میں دینے کا وعدہ کر کے — وہ ہمیشہ دھوکہ ہے۔',
 's5h':'بہت اچھے لگنے والے جاب آفر','s5b':'زیادہ پیسہ، آسان کام، اور پہلے ادائیگی مانگنا — دھوکہ ہے۔',
-'f-title':'یہ اکیلے سوچنے کی ضرورت نہیں',
-'ft-head':'بھرنے سے پہلے ایک بات',
-'ft-body':'میں سمجھتا ہوں کہ کسی انجان سے ذاتی معلومات شیئر کرنا تکلیف دہ لگ سکتا ہے۔ آپ کو وہ نہیں بتانا جس کے لیے آپ تیار نہیں ہیں۔ جو بھر سکیں بھریں — صرف ایک نام اور نمبر بھی کافی ہے۔',
+'f-title':'یہ اکیلے سوچنے کی ضرورت نہیں','ft-head':'بھرنے سے پہلے ایک بات',
+'ft-body':'میں سمجھتا ہوں کہ کسی انجان سے ذاتی معلومات شیئر کرنا تکلیف دہ لگ سکتا ہے۔ جو بھر سکیں بھریں — صرف ایک نام اور نمبر بھی کافی ہے۔',
 'fl1':'آپ کا نام','fl2':'WhatsApp نمبر',
 'fl2h':'میں یہاں رابطہ کروں گا۔ ملک کا کوڈ ڈالیں — جیسے +92',
-'fl3':'آپ کس ملک سے ہیں',
-'fl4':'آپ کس معاملے میں مدد چاہیں گے؟',
-'fl5':'آپ کی انگریزی کیسی ہے؟',
-'fl5h':'اس سے مجھے سمجھ آئے گا کہ آپ سے کیسے رابطہ کروں',
-'fl6':'اور کچھ؟',
-'fl6h':'زیادہ بچانا چاہتے ہیں؟ بہتر کام ڈھونڈ رہے ہیں؟ دھوکے کا شکار ہوئے؟ کچھ بھی لکھیں — یا خالی چھوڑ دیں۔',
-'fl7':'ریفرل کوڈ',
-'fl7h':'اگر آپ کے پاس کوڈ نہیں ہے تو صفر (0) لکھیں',
+'fl3':'آپ کس ملک سے ہیں','fl4':'آپ کس معاملے میں مدد چاہیں گے؟',
+'fl5':'آپ کی انگریزی کیسی ہے؟','fl5h':'اس سے مجھے سمجھ آئے گا کہ آپ سے کیسے رابطہ کروں',
+'fl6':'اور کچھ؟','fl6h':'زیادہ بچانا چاہتے ہیں؟ بہتر کام ڈھونڈ رہے ہیں؟ کچھ بھی لکھیں — یا خالی چھوڑ دیں۔',
+'fl7':'ریفرل کوڈ','fl7h':'اگر آپ کے پاس کوڈ نہیں ہے تو صفر (0) لکھیں',
 'f-btn':'بھیجیں — میں جلد رابطہ کروں گا',
 'f-priv':'صرف میں یہ دیکھوں گا۔ میں کبھی کسی کو نہیں دوں گا۔',
 'suc-title':'شکریہ۔ میں جلد WhatsApp پر رابطہ کروں گا۔',
 'suc-body':'آپ کا پیغام مل گیا۔ 1–2 دن میں رابطہ کروں گا۔',
 'eng-none':'بالکل نہیں','eng-basic':'تھوڑی','eng-conv':'بات چیت لائق','eng-good':'اچھی','eng-fluent':'بہت اچھی','eng-native':'مادری زبان جیسی'
 },
-
 ta:{
 'nav-free':'100% இலவசம் · வாங்க வேண்டியதில்லை',
 'h-nosell':'வாங்க வேண்டியதில்லை. விற்க வேண்டியதில்லை. உதவி மட்டுமே.',
@@ -638,55 +638,46 @@ ta:{
 'h-sub':'சேமிப்பு, பாதுகாப்பான முதலீடு, மோசடி தவிர்ப்பு — UAE-ல் உழைக்கும் மக்களுக்காக.',
 'h-cta':'இலவச உதவி பெறுங்கள் ↓',
 'p1':'உதவி பெற்றவர்கள்','p2':'எப்போதும் இலவசம்','p3':'உண்மையான முடிவுகள்',
-'ab-lbl':'இது என்ன?',
-'ab-title':'Nayaraah இலவச உதவி — வேறொன்றும் இல்லை.',
-'ab-body':'நான் வங்கி இல்லை. நான் எதையும் விற்கவில்லை. UAE-ல் 500-க்கும் மேற்பட்ட தொழிலாளர்களுக்கு அதிக சேமிப்பு, சிறந்த வேலை மற்றும் மோசடியிலிருந்து பாதுகாப்பு பெற உதவிய ஒரு நபர் நான். இந்த இணையதளம் அதே ஆலோசனைகளை இலவசமாக வழங்குகிறது.',
+'ab-lbl':'இது என்ன?','ab-title':'Nayaraah இலவச உதவி — வேறொன்றும் இல்லை.',
+'ab-body':'நான் வங்கி இல்லை. நான் எதையும் விற்கவில்லை. UAE-ல் 500-க்கும் மேற்பட்ட தொழிலாளர்களுக்கு உதவிய ஒரு நபர் நான். இந்த இணையதளம் அதே ஆலோசனைகளை இலவசமாக வழங்குகிறது.',
 'ac1':'💰 பணம் சேமியுங்கள்','ac1b':'சிறிய சம்பளத்திலும் சேமிக்கலாம்',
 'ac2':'📈 பணம் வளர்க்குங்கள்','ac2b':'குறைந்த ஆபத்தில் வளர்க்கும் வழிகள்',
 'ac3':'📤 வீட்டிற்கு பணம் அனுப்புங்கள்','ac3b':'சிறந்த விகிதம், குறைந்த கட்டணம்',
 'ac4':'🛡 மோசடியை தவிர்க்கவும்','ac4b':'இழப்பிற்கு முன் அறிகுறிகளை அறியுங்கள்',
 'ab-trust':'நான் எதையும் வாங்கச் சொல்ல மாட்டேன். எனக்கு கமிஷன் கிடைக்காது. யாரும் இதை தனியாக சமாளிக்க வேண்டியதில்லை என்பதற்காக இது இருக்கிறது.',
-'calc-title':'நீங்கள் எவ்வளவு சேமிக்கலாம்?',
-'calc-sub':'ஸ்லைடரை நகர்த்துங்கள். சிறிய சேமிப்பு எப்படி வளருகிறது என பாருங்கள்.',
+'calc-title':'நீங்கள் எவ்வளவு சேமிக்கலாம்?','calc-sub':'ஸ்லைடரை நகர்த்துங்கள். சிறிய சேமிப்பு எப்படி வளருகிறது என பாருங்கள்.',
 'cl1':'நான் மாதம் சேமிக்கிறேன்','cl2':'எத்தனை ஆண்டுகளுக்கு','cl3':'வட்டி விகிதம்',
 'r-tl':'மொத்த சேமிப்பு','r-il':'வட்டியிலிருந்து கூடுதல்',
 'inv-title':'பெரிய ஆபத்தில்லாமல் பணம் வளர்க்கலாம்',
 'inv-sub':'உங்கள் சேமிப்பை ஆபத்தில் போட வேண்டாம். இந்த வழிகள் பாதுகாப்பானவை.',
-'t1h':'அதிக வட்டி சேமிப்பு கணக்கு','t1b':'UAE வங்கியில் வட்டி சேமிப்பு கணக்கு கேளுங்கள். சில வங்கிகள் 2–4% தருகின்றன. பணம் பாதுகாப்பாக இருக்கும்.',
-'t2h':'அரசு பத்திரங்கள் (சொந்த நாட்டில்)','t2b':'இந்தியா, பாகிஸ்தான், நேபாளம் ஆகியவற்றில் அரசு சேமிப்பு பத்திரங்கள் உள்ளன. மிகவும் பாதுகாப்பானது.',
-'t3h':'UAE-ல் மணி மார்க்கெட் ஃபண்ட்','t3b':'Sarwa போன்ற செயலிகளில் குறைந்த ஆபத்துடன் முதலீடு செய்யலாம். சேமிப்பு கணக்கை விட அதிக வருவாய்.',
-'rem-title':'யார் உங்கள் குடும்பத்திற்கு அதிகம் தருகிறார்கள்?',
-'rem-sub':'நீங்கள் அனுப்ப விரும்பும் தொகையை உள்ளிடுங்கள்.',
+'t1h':'அதிக வட்டி சேமிப்பு கணக்கு','t1b':'UAE வங்கியில் வட்டி சேமிப்பு கணக்கு கேளுங்கள். சில 2–4% தருகின்றன.',
+'t2h':'அரசு பத்திரங்கள் (சொந்த நாட்டில்)','t2b':'இந்தியா, பாகிஸ்தான், நேபாளம் ஆகியவற்றில் அரசு சேமிப்பு பத்திரங்கள் உள்ளன.',
+'t3h':'UAE-ல் மணி மார்க்கெட் ஃபண்ட்','t3b':'Sarwa போன்ற செயலிகளில் குறைந்த ஆபத்துடன் முதலீடு செய்யலாம்.',
+'rem-title':'யார் உங்கள் குடும்பத்திற்கு அதிகம் தருகிறார்கள்?','rem-sub':'நீங்கள் அனுப்ப விரும்பும் தொகையை உள்ளிடுங்கள்.',
 'rl1':'அனுப்பும் தொகை','rl2':'எங்கு அனுப்புகிறீர்கள்',
 'rh1':'சேவை','rh2':'குடும்பம் பெறும்','rh3':'கட்டணம்','rh4':'வேகம்',
 'remit-note':'விகிதங்கள் வாரந்தோறும் புதுப்பிக்கப்படுகின்றன. அனுப்புவதற்கு முன் வலைதளத்தில் சரிபாருங்கள்.',
 'sc-title':'மோசடியில் உங்கள் பணத்தை இழக்காதீர்கள்',
-'sc-sub':'UAE-ல் தொழிலாளர்களை மோசடிக்காரர்கள் குறிவைக்கிறார்கள். இவை மிகவும் பொதுவானவை.',
-'s1h':'"பணம் இரட்டிப்பு" வாக்குறுதி','s1b':'எந்த உண்மையான முதலீடும் பணத்தை விரைவாக இரட்டிக்காது. இதைச் சொல்பவன் பொய் சொல்கிறான். விலகுங்கள்.',
-'s2h':'பாஸ்போர்ட் அல்லது Emirates ID கேட்பது','s2b':'வங்கிகளும் அரசு அலுவலகங்களும் மட்டுமே அசல் ஆவணங்கள் கேட்கும். எந்த முதலீட்டு ஆலோசகரும் கேட்க மாட்டார்கள்.',
-'s3h':'WhatsApp முதலீட்டு குழுக்கள்','s3b':'மோசடிக்காரர்கள் குழுவில் நம்பிக்கை பெற்று பின் பணம் கேட்கிறார்கள். உண்மையான முதலீடு இப்படி விற்கப்படாது.',
+'sc-sub':'UAE-ல் தொழிலாளர்களை மோசடிக்காரர்கள் குறிவைக்கிறார்கள்.',
+'s1h':'"பணம் இரட்டிப்பு" வாக்குறுதி','s1b':'எந்த உண்மையான முதலீடும் பணத்தை விரைவாக இரட்டிக்காது. இதைச் சொல்பவன் பொய் சொல்கிறான்.',
+'s2h':'பாஸ்போர்ட் அல்லது Emirates ID கேட்பது','s2b':'வங்கிகளும் அரசு அலுவலகங்களும் மட்டுமே அசல் ஆவணங்கள் கேட்கும்.',
+'s3h':'WhatsApp முதலீட்டு குழுக்கள்','s3b':'மோசடிக்காரர்கள் குழுவில் நம்பிக்கை பெற்று பின் பணம் கேட்கிறார்கள்.',
 's4h':'பணம் பெற பணம் கொடுக்க சொல்வது','s4b':'முதலில் பணம் கேட்டு பின்னர் தருவதாக சொல்வது எப்போதும் மோசடி.',
 's5h':'மிகவும் நல்லதாக தெரியும் வேலை வாய்ப்புகள்','s5b':'அதிக சம்பளம், எளிதான வேலை, முன்கூட்டிய பணம் கேட்டால் — மோசடி.',
-'f-title':'இதை தனியாக சமாளிக்க வேண்டியதில்லை',
-'ft-head':'பூர்த்தி செய்வதற்கு முன் ஒரு குறிப்பு',
-'ft-body':'அறிமுகமில்லாதவரிடம் தனிப்பட்ட விவரங்களை பகிர்வது அசௌகரியமாக இருக்கலாம். நீங்கள் தயாராக இல்லாத எதையும் சொல்ல வேண்டியதில்லை. முடிந்ததை பூர்த்தி செய்யுங்கள் — ஒரு பெயரும் எண்ணும் கூட போதும்.',
+'f-title':'இதை தனியாக சமாளிக்க வேண்டியதில்லை','ft-head':'பூர்த்தி செய்வதற்கு முன் ஒரு குறிப்பு',
+'ft-body':'அறிமுகமில்லாதவரிடம் தனிப்பட்ட விவரங்களை பகிர்வது அசௌகரியமாக இருக்கலாம். முடிந்ததை பூர்த்தி செய்யுங்கள் — ஒரு பெயரும் எண்ணும் கூட போதும்.',
 'fl1':'உங்கள் பெயர்','fl2':'WhatsApp எண்',
 'fl2h':'நான் இங்கே தொடர்பு கொள்வேன். நாட்டு குறியீடு சேர்க்கவும் — எ.கா. +91',
-'fl3':'நீங்கள் எந்த நாட்டினர்',
-'fl4':'நீங்கள் எந்த விஷயத்தில் உதவி விரும்புகிறீர்கள்?',
-'fl5':'உங்கள் ஆங்கிலம் எவ்வளவு?',
-'fl5h':'உங்களை எவ்வாறு தொடர்புகொள்வது என்று புரிந்துகொள்ள இது உதவுகிறது',
-'fl6':'வேறு ஏதாவது?',
-'fl6h':'அதிகமாக சேமிக்க விரும்புகிறீர்களா? சிறந்த வேலை தேடுகிறீர்களா? மோசடிக்கு ஆளானீர்களா? எதையும் எழுதுங்கள் — அல்லது காலியாக விடுங்கள்.',
-'fl7':'ரெஃபரல் குறியீடு',
-'fl7h':'உங்களிடம் குறியீடு இல்லையெனில் பூஜ்ஜியம் (0) உள்ளிடுங்கள்',
+'fl3':'நீங்கள் எந்த நாட்டினர்','fl4':'நீங்கள் எந்த விஷயத்தில் உதவி விரும்புகிறீர்கள்?',
+'fl5':'உங்கள் ஆங்கிலம் எவ்வளவு?','fl5h':'உங்களை எவ்வாறு தொடர்புகொள்வது என்று புரிந்துகொள்ள இது உதவுகிறது',
+'fl6':'வேறு ஏதாவது?','fl6h':'அதிகமாக சேமிக்க விரும்புகிறீர்களா? எதையும் எழுதுங்கள் — அல்லது காலியாக விடுங்கள்.',
+'fl7':'ரெஃபரல் குறியீடு','fl7h':'உங்களிடம் குறியீடு இல்லையெனில் பூஜ்ஜியம் (0) உள்ளிடுங்கள்',
 'f-btn':'அனுப்புங்கள் — விரைவில் தொடர்பு கொள்கிறேன்',
 'f-priv':'நான் மட்டுமே இதை பார்ப்பேன். வேறு யாரிடமும் தருவதில்லை.',
 'suc-title':'நன்றி. விரைவில் WhatsApp-ல் தொடர்பு கொள்கிறேன்.',
 'suc-body':'உங்கள் செய்தி கிடைத்தது. 1–2 நாட்களில் தொடர்பு கொள்கிறேன்.',
 'eng-none':'இல்லை','eng-basic':'சிறிது','eng-conv':'பேசுகிற அளவு','eng-good':'நல்லது','eng-fluent':'சரளமாக','eng-native':'தாய்மொழி போல'
 },
-
 ml:{
 'nav-free':'100% സൗജന്യം · വാങ്ങേണ്ടതില്ല',
 'h-nosell':'വാങ്ങേണ്ടതില്ല. വിൽക്കേണ്ടതില്ല. സഹായം മാത്രം.',
@@ -694,55 +685,46 @@ ml:{
 'h-sub':'സേവിംഗ്സ്, സുരക്ഷിത നിക്ഷേപം, തട്ടിപ്പ് ഒഴിവാക്കൽ — UAE-ൽ കഠിനമായി ജോലി ചെയ്യുന്നവർക്കായി.',
 'h-cta':'സൗജന്യ സഹായം നേടൂ ↓',
 'p1':'സഹായിച്ചവർ','p2':'എന്നും സൗജന്യം','p3':'യഥാർത്ഥ ഫലങ്ങൾ',
-'ab-lbl':'ഇത് എന്താണ്?',
-'ab-title':'Nayaraah സൗജന്യ സഹായമാണ് — മറ്റൊന്നുമില്ല.',
-'ab-body':'ഞാൻ ഒരു ബാങ്ക് അല്ല. ഞാൻ ഒന്നും വിൽക്കുന്നില്ല. UAE-ൽ 500-ലധികം തൊഴിലാളികൾക്ക് കൂടുതൽ സേവ് ചെയ്യാനും നല്ല ജോലി കണ്ടെത്താനും തട്ടിപ്പിൽ നിന്ന് സുരക്ഷിതരാകാനും സഹായിച്ച ഒരു വ്യക്തിയാണ് ഞാൻ. ഈ വെബ്സൈറ്റ് അതേ നുറുങ്ങുകൾ സൗജന്യമായി നൽകുന്നു.',
+'ab-lbl':'ഇത് എന്താണ്?','ab-title':'Nayaraah സൗജന്യ സഹായമാണ് — മറ്റൊന്നുമില്ല.',
+'ab-body':'ഞാൻ ഒരു ബാങ്ക് അല്ല. ഞാൻ ഒന്നും വിൽക്കുന്നില്ല. UAE-ൽ 500-ലധികം തൊഴിലാളികളെ സഹായിച്ച ഒരു വ്യക്തിയാണ് ഞാൻ. ഈ വെബ്സൈറ്റ് അതേ നുറുങ്ങുകൾ സൗജന്യമായി നൽകുന്നു.',
 'ac1':'💰 പണം സേവ് ചെയ്യൂ','ac1b':'ചെറിയ ശമ്പളത്തിലും സേവ് ചെയ്യാം',
 'ac2':'📈 പണം വളർത്തൂ','ac2b':'കുറഞ്ഞ റിസ്കിൽ വളർത്തുന്ന വഴികൾ',
 'ac3':'📤 വീട്ടിലേക്ക് പണം അയക്കൂ','ac3b':'മികച്ച നിരക്ക്, ഏറ്റവും കുറഞ്ഞ ഫീ',
 'ac4':'🛡 തട്ടിപ്പ് ഒഴിവാക്കൂ','ac4b':'നഷ്ടത്തിന് മുൻപ് അടയാളങ്ങൾ അറിയൂ',
 'ab-trust':'ഞാൻ ഒരിക്കലും ഒന്നും വാങ്ങാൻ പറയില്ല. എനിക്ക് കമ്മീഷൻ കിട്ടില്ല. ആരും ഇത് തനിയെ സമാളിക്കേണ്ടതില്ല എന്നതിനാൽ ഇത് ഇവിടെ ഉണ്ട്.',
-'calc-title':'നിങ്ങൾക്ക് എത്ര സേവ് ചെയ്യാം?',
-'calc-sub':'സ്ലൈഡർ നീക്കൂ. ചെറിയ സേവിംഗ്സ് എങ്ങനെ വളരുന്നു എന്ന് കാണൂ.',
+'calc-title':'നിങ്ങൾക്ക് എത്ര സേവ് ചെയ്യാം?','calc-sub':'സ്ലൈഡർ നീക്കൂ. ചെറിയ സേവിംഗ്സ് എങ്ങനെ വളരുന്നു എന്ന് കാണൂ.',
 'cl1':'ഞാൻ ഓരോ മാസവും സേവ് ചെയ്യുന്നത്','cl2':'എത്ര വർഷത്തേക്ക്','cl3':'പലിശ നിരക്ക്',
 'r-tl':'ആകെ സേവ്','r-il':'പലിശയിൽ നിന്ന് അധികം',
 'inv-title':'വലിയ റിസ്ക് ഇല്ലാതെ പണം വളർത്തൂ',
 'inv-sub':'നിങ്ങളുടെ സേവിംഗ്സ് അപകടത്തിലാക്കേണ്ട. ഈ ഓപ്ഷനുകൾ സുരക്ഷിതമാണ്.',
-'t1h':'കൂടുതൽ പലിശ തരുന്ന സേവിംഗ്സ് അക്കൗണ്ട്','t1b':'UAE ബാങ്കിൽ പലിശ സേവിംഗ്സ് അക്കൗണ്ട് ചോദിക്കൂ. ചിലത് 2–4% തരും. പണം സുരക്ഷിതമായി വളരും.',
-'t2h':'ഗവൺമെന്റ് ബോണ്ടുകൾ (നാട്ടിൽ)','t2b':'ഇന്ത്യ, പാകിസ്താൻ, നേപ്പാൾ എന്നിവിടങ്ങളിൽ ഗവൺമെന്റ് സേവിംഗ്സ് ബോണ്ടുകൾ ഉണ്ട്. വളരെ സുരക്ഷിതം.',
-'t3h':'UAE-ലെ മണി മാർക്കറ്റ് ഫണ്ട്','t3b':'Sarwa പോലുള്ള ആപ്പുകളിൽ കുറഞ്ഞ അപകടത്തോടെ നിക്ഷേപിക്കാം. സേവിംഗ്സ് അക്കൗണ്ടിനേക്കാൾ കൂടുതൽ വളർച്ച.',
-'rem-title':'ആർ നിങ്ങളുടെ കുടുംബത്തിന് കൂടുതൽ തരുന്നു?',
-'rem-sub':'അയക്കാൻ ആഗ്രഹിക്കുന്ന തുക നൽകൂ.',
+'t1h':'കൂടുതൽ പലിശ തരുന്ന സേവിംഗ്സ് അക്കൗണ്ട്','t1b':'UAE ബാങ്കിൽ പലിശ സേവിംഗ്സ് അക്കൗണ്ട് ചോദിക്കൂ. ചിലത് 2–4% തരും.',
+'t2h':'ഗവൺമെന്റ് ബോണ്ടുകൾ (നാട്ടിൽ)','t2b':'ഇന്ത്യ, പാകിസ്താൻ, നേപ്പാൾ ഗവൺമെന്റ് ബോണ്ടുകൾ വളരെ സുരക്ഷിതം.',
+'t3h':'UAE-ലെ മണി മാർക്കറ്റ് ഫണ്ട്','t3b':'Sarwa പോലുള്ള ആപ്പുകളിൽ കുറഞ്ഞ അപകടത്തോടെ നിക്ഷേപിക്കാം.',
+'rem-title':'ആർ നിങ്ങളുടെ കുടുംബത്തിന് കൂടുതൽ തരുന്നു?','rem-sub':'അയക്കാൻ ആഗ്രഹിക്കുന്ന തുക നൽകൂ.',
 'rl1':'അയക്കുന്ന തുക','rl2':'എവിടേക്ക് അയക്കുന്നു',
 'rh1':'സർവ്വീസ്','rh2':'കുടുംബം കിട്ടും','rh3':'ഫീ','rh4':'വേഗം',
 'remit-note':'നിരക്കുകൾ ഓരോ ആഴ്ചയും അപ്ഡേറ്റ് ചെയ്യുന്നു. അയക്കുന്നതിന് മുൻപ് വെബ്സൈറ്റ് പരിശോധിക്കൂ.',
 'sc-title':'തട്ടിപ്പിൽ പണം നഷ്ടപ്പെടുത്തരുത്',
-'sc-sub':'UAE-ൽ തൊഴിലാളികളെ തട്ടിപ്പുകാർ ലക്ഷ്യമിടുന്നു. ഇവ ഏറ്റവും സാധാരണമായവയാണ്.',
-'s1h':'"പണം ഇരട്ടി" വാഗ്ദാനം','s1b':'ഒരു യഥാർത്ഥ നിക്ഷേപവും പണം വേഗം ഇരട്ടിയാക്കില്ല. ഇത് പറയുന്നവൻ കള്ളൻ. ഒഴിഞ്ഞുമാറൂ.',
-'s2h':'പാസ്പോർട്ട് അല്ലെങ്കിൽ Emirates ID ചോദിക്കൽ','s2b':'ബാങ്കുകളും സർക്കാർ ഓഫീസുകളും മാത്രമേ ഒറിജിനൽ രേഖകൾ ചോദിക്കൂ. ഒരു നിക്ഷേപ ഉപദേഷ്ടാവും ചോദിക്കില്ല.',
-'s3h':'WhatsApp നിക്ഷേപ ഗ്രൂപ്പുകൾ','s3b':'തട്ടിപ്പുകാർ ഗ്രൂപ്പിൽ വിശ്വാസം വളർത്തി പിന്നീട് പണം ചോദിക്കും. യഥാർത്ഥ നിക്ഷേപം ഇങ്ങനെ വിൽക്കില്ല.',
+'sc-sub':'UAE-ൽ തൊഴിലാളികളെ തട്ടിപ്പുകാർ ലക്ഷ്യമിടുന്നു.',
+'s1h':'"പണം ഇരട്ടി" വാഗ്ദാനം','s1b':'ഒരു യഥാർത്ഥ നിക്ഷേപവും പണം വേഗം ഇരട്ടിയാക്കില്ല. ഇത് പറയുന്നവൻ കള്ളൻ.',
+'s2h':'പാസ്പോർട്ട് അല്ലെങ്കിൽ Emirates ID ചോദിക്കൽ','s2b':'ബാങ്കുകളും സർക്കാർ ഓഫീസുകളും മാത്രമേ ഒറിജിനൽ രേഖകൾ ചോദിക്കൂ.',
+'s3h':'WhatsApp നിക്ഷേപ ഗ്രൂപ്പുകൾ','s3b':'തട്ടിപ്പുകാർ ഗ്രൂപ്പിൽ വിശ്വാസം വളർത്തി പിന്നീട് പണം ചോദിക്കും.',
 's4h':'പണം കിട്ടാൻ പണം കൊടുക്കൽ','s4b':'ആദ്യം കൊടുത്താൽ കൂടുതൽ തരാം എന്ന് പറയുന്നത് എല്ലായ്പ്പോഴും തട്ടിപ്പ്.',
 's5h':'വളരെ നല്ലതായി തോന്നുന്ന ജോലി ഓഫറുകൾ','s5b':'കൂടുതൽ ശമ്പളം, എളുപ്പം, മുൻകൂർ പണം ചോദിക്കൽ — തട്ടിപ്പ്.',
-'f-title':'ഇത് തനിയെ സമാളിക്കേണ്ടതില്ല',
-'ft-head':'പൂരിപ്പിക്കുന്നതിന് മുൻപ് ഒരു കുറിപ്പ്',
-'ft-body':'ഒരു അപരിചിതനോട് വ്യക്തിഗത വിവരങ്ങൾ പങ്കുവെക്കുന്നത് അസ്വസ്ഥത ഉണ്ടാക്കാം. നിങ്ങൾ തയ്യാറല്ലാത്ത ഒന്നും പറയേണ്ടതില്ല. കഴിയുന്നത് പൂരിപ്പിക്കൂ — ഒരു പേരും നമ്പറും മതി.',
+'f-title':'ഇത് തനിയെ സമാളിക്കേണ്ടതില്ല','ft-head':'പൂരിപ്പിക്കുന്നതിന് മുൻപ് ഒരു കുറിപ്പ്',
+'ft-body':'ഒരു അപരിചിതനോട് വ്യക്തിഗത വിവരങ്ങൾ പങ്കുവെക്കുന്നത് അസ്വസ്ഥത ഉണ്ടാക്കാം. കഴിയുന്നത് പൂരിപ്പിക്കൂ — ഒരു പേരും നമ്പറും മതി.',
 'fl1':'നിങ്ങളുടെ പേര്','fl2':'WhatsApp നമ്പർ',
 'fl2h':'ഞാൻ ഇവിടെ ബന്ധപ്പെടും. രാജ്യ കോഡ് ചേർക്കൂ — ഉദാ. +91',
-'fl3':'ഏത് രാജ്യക്കാരൻ',
-'fl4':'നിങ്ങൾക്ക് എന്തിൽ സഹായം ആവശ്യമാണ്?',
-'fl5':'ഇംഗ്ലീഷ് എത്ര അറിയാം?',
-'fl5h':'നിങ്ങളെ എങ്ങനെ ബന്ധപ്പെടണം എന്ന് മനസ്സിലാക്കാൻ ഇത് സഹായിക്കും',
-'fl6':'വേറെ ഏതെങ്കിലും?',
-'fl6h':'കൂടുതൽ സേവ് ചെയ്യാൻ? നല്ല ജോലി കിട്ടാൻ? തട്ടിപ്പ് ഉണ്ടായോ? എതും എഴുതൂ — അല്ലെങ്കിൽ ഒഴിഞ്ഞ് വിടൂ.',
-'fl7':'റഫറൽ കോഡ്',
-'fl7h':'കോഡ് ഇല്ലെങ്കിൽ പൂജ്യം (0) നൽകൂ',
+'fl3':'ഏത് രാജ്യക്കാരൻ','fl4':'നിങ്ങൾക്ക് എന്തിൽ സഹായം ആവശ്യമാണ്?',
+'fl5':'ഇംഗ്ലീഷ് എത്ര അറിയാം?','fl5h':'നിങ്ങളെ എങ്ങനെ ബന്ധപ്പെടണം എന്ന് മനസ്സിലാക്കാൻ ഇത് സഹായിക്കും',
+'fl6':'വേറെ ഏതെങ്കിലും?','fl6h':'കൂടുതൽ സേവ് ചെയ്യാൻ? എതും എഴുതൂ — അല്ലെങ്കിൽ ഒഴിഞ്ഞ് വിടൂ.',
+'fl7':'റഫറൽ കോഡ്','fl7h':'കോഡ് ഇല്ലെങ്കിൽ പൂജ്യം (0) നൽകൂ',
 'f-btn':'അയക്കൂ — ഉടൻ ബന്ധപ്പെടാം',
 'f-priv':'ഞാൻ മാത്രം ഇത് കാണും. മറ്റാർക്കും കൊടുക്കില്ല.',
 'suc-title':'നന്ദി. ഉടൻ WhatsApp-ൽ ബന്ധപ്പെടാം.',
 'suc-body':'നിങ്ങളുടെ സന്ദേശം കിട്ടി. 1–2 ദിവസത്തിനുള്ളിൽ ബന്ധപ്പെടും.',
 'eng-none':'ഇല്ല','eng-basic':'അൽപ്പം','eng-conv':'സംസാരിക്കാൻ','eng-good':'നല്ലത്','eng-fluent':'നന്നായി','eng-native':'മാതൃഭാഷ പോലെ'
 },
-
 ne:{
 'nav-free':'100% निःशुल्क · केही किन्नु पर्दैन',
 'h-nosell':'किनमेल गर्नुपर्दैन। बेच्नुपर्दैन। सहयोग मात्र।',
@@ -750,55 +732,46 @@ ne:{
 'h-sub':'बचत, सुरक्षित लगानी र ठगीबाट बचाव — UAE मा मेहनत गर्नेहरूका लागि।',
 'h-cta':'निःशुल्क सहयोग पाउनुहोस् ↓',
 'p1':'सहयोग गरिएका','p2':'सधैंभरि निःशुल्क','p3':'वास्तविक नतिजाहरू',
-'ab-lbl':'यो के हो?',
-'ab-title':'Nayaraah निःशुल्क सहयोग हो — अरू केही होइन।',
-'ab-body':'म बैंक होइन। म केही बेच्दिनँ। UAE मा ५०० भन्दा बढी कामदारहरूलाई बढी बचत गर्न, राम्रो काम ढूँढ्न र ठगीबाट जोगिन मद्दत गरेको एक व्यक्ति हुँ। यो वेबसाइटले ती नै सुझावहरू निःशुल्क दिन्छ।',
+'ab-lbl':'यो के हो?','ab-title':'Nayaraah निःशुल्क सहयोग हो — अरू केही होइन।',
+'ab-body':'म बैंक होइन। म केही बेच्दिनँ। UAE मा ५०० भन्दा बढी कामदारहरूलाई मद्दत गरेको एक व्यक्ति हुँ। यो वेबसाइटले ती नै सुझावहरू निःशुल्क दिन्छ।',
 'ac1':'💰 पैसा बचाउनुहोस्','ac1b':'सानो तलबमा पनि बचत गर्न सकिन्छ',
 'ac2':'📈 पैसा बढाउनुहोस्','ac2b':'कम जोखिममा पैसा बढाउने तरिकाहरू',
 'ac3':'📤 घर पैसा पठाउनुहोस्','ac3b':'राम्रो दर, कम शुल्क',
 'ac4':'🛡 ठगीबाट बच्नुहोस्','ac4b':'नोक्सान हुनुअघि संकेत चिन्नुहोस्',
 'ab-trust':'म कहिल्यै केही किन्न भन्दिनँ। मलाई कुनै कमिसन पाइँदैन। यो यसलिए छ किनभने कसैले पनि यो एक्लै बुझिरहनु पर्दैन।',
-'calc-title':'तपाईं कति बचत गर्न सक्नुहुन्छ?',
-'calc-sub':'स्लाइडर सार्नुहोस्। सानो बचत कसरी बढ्छ हेर्नुहोस्।',
+'calc-title':'तपाईं कति बचत गर्न सक्नुहुन्छ?','calc-sub':'स्लाइडर सार्नुहोस्। सानो बचत कसरी बढ्छ हेर्नुहोस्।',
 'cl1':'म प्रत्येक महिना बचत गर्छु','cl2':'कति वर्षका लागि','cl3':'ब्याज दर',
 'r-tl':'जम्मा बचत','r-il':'ब्याजबाट थप',
 'inv-title':'ठूलो जोखिम बिना पैसा बढाउनुहोस्',
 'inv-sub':'बचतलाई जोखिममा नहाल्नुहोस्। यी विकल्पहरू सुरक्षित छन्।',
-'t1h':'बढी ब्याज दिने बचत खाता','t1b':'UAE बैंकमा ब्याज बचत खाता माग्नुहोस्। केही बैंकले २–४% दिन्छन्। पैसा सुरक्षित रहन्छ।',
-'t2h':'सरकारी बन्ड (घरमा)','t2b':'नेपाल, भारत, पाकिस्तानमा सरकारी बचत बन्ड छन्। सरकारले पैसा राख्छ — धेरै सुरक्षित।',
-'t3h':'UAE मा मनी मार्केट फन्ड','t3b':'Sarwa जस्ता एपमा कम पैसामा कम जोखिमसहित लगानी गर्न सकिन्छ। बचत खाताभन्दा बढी वृद्धि।',
-'rem-title':'कसले तपाईंको परिवारलाई सबैभन्दा बढी दिन्छ?',
-'rem-sub':'कति पठाउन चाहनुहुन्छ भनेर हाल्नुहोस्।',
+'t1h':'बढी ब्याज दिने बचत खाता','t1b':'UAE बैंकमा ब्याज बचत खाता माग्नुहोस्। केही बैंकले २–४% दिन्छन्।',
+'t2h':'सरकारी बन्ड (घरमा)','t2b':'नेपाल, भारत, पाकिस्तानमा सरकारी बचत बन्ड छन्। धेरै सुरक्षित।',
+'t3h':'UAE मा मनी मार्केट फन्ड','t3b':'Sarwa जस्ता एपमा कम पैसामा कम जोखिमसहित लगानी गर्न सकिन्छ।',
+'rem-title':'कसले तपाईंको परिवारलाई सबैभन्दा बढी दिन्छ?','rem-sub':'कति पठाउन चाहनुहुन्छ भनेर हाल्नुहोस्।',
 'rl1':'पठाउने रकम','rl2':'कहाँ पठाउँदै हुनुहुन्छ',
 'rh1':'सेवा','rh2':'परिवारले पाउने','rh3':'तपाईंको शुल्क','rh4':'समय',
 'remit-note':'दरहरू हरेक हप्ता अपडेट गरिन्छ। पठाउनुअघि वेबसाइट हेर्नुहोस्।',
 'sc-title':'ठगीमा आफ्नो पैसा नगुमाउनुहोस्',
-'sc-sub':'UAE मा कामदारहरूलाई ठगीकर्ताले निशाना बनाउँछन्। यी सबैभन्दा आम ठगीहरू हुन्।',
-'s1h':'"पैसा दोब्बर" गर्ने वाचा','s1b':'कुनै पनि असली लगानीले पैसा छिट्टै दोब्बर गर्दैन। यो भन्नेले झूट बोलेको हो। हटिजानुहोस्।',
-'s2h':'राहदानी वा Emirates ID माग्नु','s2b':'बैंक र सरकारी कार्यालयले मात्र असली कागजात माग्छन्। कुनै लगानी सल्लाहकारले माग्दैन।',
-'s3h':'WhatsApp लगानी समूह','s3b':'ठगीकर्ताले समूहमा बिस्तारै विश्वास बनाएर पैसा माग्छन्। असली लगानी यसरी बेचिँदैन।',
+'sc-sub':'UAE मा कामदारहरूलाई ठगीकर्ताले निशाना बनाउँछन्।',
+'s1h':'"पैसा दोब्बर" गर्ने वाचा','s1b':'कुनै पनि असली लगानीले पैसा छिट्टै दोब्बर गर्दैन। यो भन्नेले झूट बोलेको हो।',
+'s2h':'राहदानी वा Emirates ID माग्नु','s2b':'बैंक र सरकारी कार्यालयले मात्र असली कागजात माग्छन्।',
+'s3h':'WhatsApp लगानी समूह','s3b':'ठगीकर्ताले समूहमा बिस्तारै विश्वास बनाएर पैसा माग्छन्।',
 's4h':'पैसा पाउन पैसा दिनु','s4b':'पहिले पैसा माग्ने, पछि दिने भन्ने — सधैं ठगी हो।',
 's5h':'धेरै राम्रो देखिने जागिर अफर','s5b':'धेरै पैसा, सजिलो काम, अग्रिम पैसा माग्ने — ठगी हो।',
-'f-title':'यो एक्लै सामना गर्नु पर्दैन',
-'ft-head':'भर्नु अघि एउटा कुरा',
-'ft-body':'म बुझ्छु कि कसैलाई नचिनेको मानिससँग निजी जानकारी शेयर गर्नु असहज लाग्न सक्छ। तपाईं तयार नभएको केही पनि बताउनु पर्दैन। जे भर्न सक्नुहुन्छ भर्नुहोस् — एउटा नाम र नम्बर पनि पुग्छ।',
+'f-title':'यो एक्लै सामना गर्नु पर्दैन','ft-head':'भर्नु अघि एउटा कुरा',
+'ft-body':'म बुझ्छु कि कसैलाई नचिनेको मानिससँग निजी जानकारी शेयर गर्नु असहज लाग्न सक्छ। जे भर्न सक्नुहुन्छ भर्नुहोस् — एउटा नाम र नम्बर पनि पुग्छ।',
 'fl1':'तपाईंको नाम','fl2':'WhatsApp नम्बर',
 'fl2h':'म यहाँ सम्पर्क गर्छु। देश कोड हाल्नुहोस् — जस्तै +977',
-'fl3':'तपाईं कुन देशबाट',
-'fl4':'तपाईंलाई कुन विषयमा सहयोग चाहिनेछ?',
-'fl5':'तपाईंको अंग्रेजी कस्तो छ?',
-'fl5h':'यसले मलाई तपाईंसँग कसरी सम्पर्क गर्ने भनेर बुझ्न मद्दत गर्छ',
-'fl6':'अरू केही?',
-'fl6h':'बढी बचत गर्न चाहनुहुन्छ? राम्रो काम खोज्दै हुनुहुन्छ? ठगीको शिकार हुनुभयो? जेसुकै लेख्नुहोस् — वा खाली छोड्नुहोस्।',
-'fl7':'रेफरल कोड',
-'fl7h':'कोड छैन भने शून्य (0) लेख्नुहोस्',
+'fl3':'तपाईं कुन देशबाट','fl4':'तपाईंलाई कुन विषयमा सहयोग चाहिनेछ?',
+'fl5':'तपाईंको अंग्रेजी कस्तो छ?','fl5h':'यसले मलाई तपाईंसँग कसरी सम्पर्क गर्ने भनेर बुझ्न मद्दत गर्छ',
+'fl6':'अरू केही?','fl6h':'बढी बचत गर्न चाहनुहुन्छ? जेसुकै लेख्नुहोस् — वा खाली छोड्नुहोस्।',
+'fl7':'रेफरल कोड','fl7h':'कोड छैन भने शून्य (0) लेख्नुहोस्',
 'f-btn':'पठाउनुहोस् — चाँडै सम्पर्क गर्छु',
 'f-priv':'मैले मात्र यो देख्छु। कसैलाई दिँदिनँ।',
 'suc-title':'धन्यवाद। चाँडै WhatsApp मा सम्पर्क गर्छु।',
 'suc-body':'तपाईंको सन्देश प्राप्त भयो। १–२ दिनमा सम्पर्क गर्छु।',
 'eng-none':'बिल्कुल छैन','eng-basic':'थोरै','eng-conv':'कुराकानी गर्न सकिने','eng-good':'राम्रो','eng-fluent':'धेरै राम्रो','eng-native':'मातृभाषा जस्तो'
 },
-
 bn:{
 'nav-free':'100% বিনামূল্যে · কিছু কিনতে হবে না',
 'h-nosell':'কিনতে হবে না। বেচতে হবে না। শুধু সাহায্য।',
@@ -806,55 +779,46 @@ bn:{
 'h-sub':'সঞ্চয়, নিরাপদ বিনিয়োগ এবং প্রতারণা এড়ানো — UAE-এ পরিশ্রমী মানুষদের জন্য।',
 'h-cta':'বিনামূল্যে সহায়তা নিন ↓',
 'p1':'সাহায্য করা হয়েছে','p2':'সবসময় বিনামূল্যে','p3':'বাস্তব ফলাফল',
-'ab-lbl':'এটা কী?',
-'ab-title':'Nayaraah বিনামূল্যে সাহায্য — আর কিছু নয়।',
-'ab-body':'আমি ব্যাংক নই। আমি কিছু বিক্রি করি না। UAE-এ ৫০০ জনেরও বেশি শ্রমিককে বেশি সঞ্চয়, ভালো কাজ এবং প্রতারণা থেকে সুরক্ষায় সাহায্য করা একজন মানুষ আমি। এই ওয়েবসাইট সেই একই পরামর্শ বিনামূল্যে দেয়।',
+'ab-lbl':'এটা কী?','ab-title':'Nayaraah বিনামূল্যে সাহায্য — আর কিছু নয়।',
+'ab-body':'আমি ব্যাংক নই। আমি কিছু বিক্রি করি না। UAE-এ ৫০০ জনেরও বেশি শ্রমিককে সাহায্য করা একজন মানুষ আমি। এই ওয়েবসাইট সেই একই পরামর্শ বিনামূল্যে দেয়।',
 'ac1':'💰 টাকা বাঁচান','ac1b':'ছোট বেতনেও সঞ্চয় করা যায়',
 'ac2':'📈 টাকা বাড়ান','ac2b':'কম ঝুঁকিতে বাড়ানোর উপায়',
 'ac3':'📤 বাড়িতে টাকা পাঠান','ac3b':'সেরা রেট, সবচেয়ে কম ফি',
 'ac4':'🛡 প্রতারণা এড়ান','ac4b':'ক্ষতি হওয়ার আগে লক্ষণ চিনুন',
 'ab-trust':'আমি কখনো কিছু কিনতে বলব না। আমি কোনো কমিশন পাই না। কাউকে একা এটা বুঝতে হবে না বলেই এটি আছে।',
-'calc-title':'আপনি কত সঞ্চয় করতে পারবেন?',
-'calc-sub':'স্লাইডার সরান। ছোট সঞ্চয় কীভাবে বাড়ে দেখুন।',
+'calc-title':'আপনি কত সঞ্চয় করতে পারবেন?','calc-sub':'স্লাইডার সরান। ছোট সঞ্চয় কীভাবে বাড়ে দেখুন।',
 'cl1':'আমি প্রতি মাসে সঞ্চয় করি','cl2':'কত বছরের জন্য','cl3':'সুদের হার',
 'r-tl':'মোট সঞ্চয়','r-il':'সুদ থেকে অতিরিক্ত',
 'inv-title':'বড় ঝুঁকি ছাড়াই টাকা বাড়ান',
 'inv-sub':'সঞ্চয়কে ঝুঁকিতে ফেলতে হবে না। এই বিকল্পগুলো নিরাপদ।',
-'t1h':'বেশি সুদের সঞ্চয় অ্যাকাউন্ট','t1b':'UAE ব্যাংকে সুদের সঞ্চয় অ্যাকাউন্ট চান। কিছু ব্যাংক ২–৪% দেয়। টাকা নিরাপদ থাকে।',
-'t2h':'সরকারি বন্ড (নিজের দেশে)','t2b':'বাংলাদেশ, ভারত, নেপালে সরকারি সঞ্চয় বন্ড আছে। সরকার টাকা রাখে — খুব নিরাপদ।',
-'t3h':'UAE-এ মানি মার্কেট ফান্ড','t3b':'Sarwa-র মতো অ্যাপে কম টাকায় কম ঝুঁকিতে বিনিয়োগ করা যায়। সঞ্চয় অ্যাকাউন্টের চেয়ে বেশি বৃদ্ধি।',
-'rem-title':'কে আপনার পরিবারকে সবচেয়ে বেশি দেয়?',
-'rem-sub':'আপনি কত পাঠাতে চান তা দিন।',
+'t1h':'বেশি সুদের সঞ্চয় অ্যাকাউন্ট','t1b':'UAE ব্যাংকে সুদের সঞ্চয় অ্যাকাউন্ট চান। কিছু ব্যাংক ২–৪% দেয়।',
+'t2h':'সরকারি বন্ড (নিজের দেশে)','t2b':'বাংলাদেশ, ভারত, নেপালে সরকারি সঞ্চয় বন্ড আছে। খুব নিরাপদ।',
+'t3h':'UAE-এ মানি মার্কেট ফান্ড','t3b':'Sarwa-র মতো অ্যাপে কম টাকায় কম ঝুঁকিতে বিনিয়োগ করা যায়।',
+'rem-title':'কে আপনার পরিবারকে সবচেয়ে বেশি দেয়?','rem-sub':'আপনি কত পাঠাতে চান তা দিন।',
 'rl1':'পাঠানোর পরিমাণ','rl2':'কোথায় পাঠাচ্ছেন',
 'rh1':'সেবা','rh2':'পরিবার পাবে','rh3':'আপনার ফি','rh4':'সময়',
 'remit-note':'রেট প্রতি সপ্তাহে আপডেট করা হয়। পাঠানোর আগে ওয়েবসাইট দেখুন।',
 'sc-title':'প্রতারণায় টাকা হারাবেন না',
-'sc-sub':'UAE-এ প্রতারকরা শ্রমিকদের টার্গেট করে। এগুলো সবচেয়ে সাধারণ প্রতারণা।',
-'s1h':'"টাকা দ্বিগুণ" প্রতিশ্রুতি','s1b':'কোনো আসল বিনিয়োগ দ্রুত টাকা দ্বিগুণ করে না। যে বলে সে মিথ্যাবাদী। সরে যান।',
-'s2h':'পাসপোর্ট বা Emirates ID চাওয়া','s2b':'শুধু ব্যাংক ও সরকারি অফিস আসল কাগজ চায়। কোনো বিনিয়োগ পরামর্শদাতা চায় না।',
-'s3h':'WhatsApp বিনিয়োগ গ্রুপ','s3b':'প্রতারকরা ধীরে বিশ্বাস বানিয়ে পরে টাকা চায়। আসল বিনিয়োগ এভাবে বিক্রি হয় না।',
+'sc-sub':'UAE-এ প্রতারকরা শ্রমিকদের টার্গেট করে।',
+'s1h':'"টাকা দ্বিগুণ" প্রতিশ্রুতি','s1b':'কোনো আসল বিনিয়োগ দ্রুত টাকা দ্বিগুণ করে না। যে বলে সে মিথ্যাবাদী।',
+'s2h':'পাসপোর্ট বা Emirates ID চাওয়া','s2b':'শুধু ব্যাংক ও সরকারি অফিস আসল কাগজ চায়।',
+'s3h':'WhatsApp বিনিয়োগ গ্রুপ','s3b':'প্রতারকরা ধীরে বিশ্বাস বানিয়ে পরে টাকা চায়।',
 's4h':'টাকা পেতে টাকা দেওয়া','s4b':'আগে দিলে পরে বেশি দেবে — এটা সবসময় প্রতারণা।',
 's5h':'খুব ভালো মনে হওয়া চাকরির অফার','s5b':'বেশি বেতন, সহজ কাজ, আগাম টাকা চাওয়া — প্রতারণা।',
-'f-title':'এটা একা সামলাতে হবে না',
-'ft-head':'পূরণ করার আগে একটা কথা',
-'ft-body':'আমি বুঝি যে অপরিচিতের কাছে ব্যক্তিগত তথ্য শেয়ার করা অস্বস্তিকর লাগতে পারে। আপনি যা শেয়ার করতে প্রস্তুত নন তা বলতে হবে না। যা পারেন পূরণ করুন — একটা নাম আর নম্বরই যথেষ্ট।',
+'f-title':'এটা একা সামলাতে হবে না','ft-head':'পূরণ করার আগে একটা কথা',
+'ft-body':'আমি বুঝি যে অপরিচিতের কাছে ব্যক্তিগত তথ্য শেয়ার করা অস্বস্তিকর লাগতে পারে। যা পারেন পূরণ করুন — একটা নাম আর নম্বরই যথেষ্ট।',
 'fl1':'আপনার নাম','fl2':'WhatsApp নম্বর',
 'fl2h':'আমি এখানে যোগাযোগ করব। দেশের কোড দিন — যেমন +880',
-'fl3':'আপনি কোন দেশ থেকে',
-'fl4':'আপনি কোন বিষয়ে সহায়তা চান?',
-'fl5':'আপনার ইংরেজি কেমন?',
-'fl5h':'এটা আমাকে বুঝতে সাহায্য করে আপনার সাথে কীভাবে যোগাযোগ করব',
-'fl6':'আর কিছু?',
-'fl6h':'আরও সঞ্চয় করতে চান? ভালো কাজ খুঁজছেন? প্রতারিত হয়েছেন? যা খুশি লিখুন — বা খালি রাখুন।',
-'fl7':'রেফারেল কোড',
-'fl7h':'কোড না থাকলে শূন্য (0) লিখুন',
+'fl3':'আপনি কোন দেশ থেকে','fl4':'আপনি কোন বিষয়ে সহায়তা চান?',
+'fl5':'আপনার ইংরেজি কেমন?','fl5h':'এটা আমাকে বুঝতে সাহায্য করে আপনার সাথে কীভাবে যোগাযোগ করব',
+'fl6':'আর কিছু?','fl6h':'আরও সঞ্চয় করতে চান? যা খুশি লিখুন — বা খালি রাখুন।',
+'fl7':'রেফারেল কোড','fl7h':'কোড না থাকলে শূন্য (0) লিখুন',
 'f-btn':'পাঠান — শীঘ্রই যোগাযোগ করব',
 'f-priv':'শুধু আমি এটা দেখব। কাউকে দেব না।',
 'suc-title':'ধন্যবাদ। শীঘ্রই WhatsApp-এ যোগাযোগ করব।',
 'suc-body':'আপনার বার্তা পেয়েছি। ১–২ দিনের মধ্যে যোগাযোগ করব।',
 'eng-none':'একদমই না','eng-basic':'সামান্য','eng-conv':'কথা বলতে পারি','eng-good':'ভালো','eng-fluent':'খুব ভালো','eng-native':'মাতৃভাষার মতো'
 },
-
 tl:{
 'nav-free':'100% libre · walang bibilhin',
 'h-nosell':'Walang bibilhin. Walang ibebenta. Tulong lang.',
@@ -862,48 +826,40 @@ tl:{
 'h-sub':'Tips sa pagtitipid, ligtas na pamumuhunan, at pag-iwas sa scam — para sa mga masipag na tao sa UAE.',
 'h-cta':'Kumuha ng libreng tulong ↓',
 'p1':'mga natulungan','p2':'lagi, magpakailanman','p3':'tunay na resulta',
-'ab-lbl':'Ano ito?',
-'ab-title':'Ang Nayaraah ay libreng tulong — wala nang iba.',
-'ab-body':'Hindi ako bangko. Hindi ako nagbebenta ng kahit ano. Isa akong taong nakatulong na sa mahigit 500 manggagawa sa UAE na makatipid nang higit, makahanap ng mas magandang trabaho, at manatiling ligtas mula sa scam. Ang website na ito ay nagbibigay ng parehong mga tip, nang libre.',
+'ab-lbl':'Ano ito?','ab-title':'Ang Nayaraah ay libreng tulong — wala nang iba.',
+'ab-body':'Hindi ako bangko. Hindi ako nagbebenta ng kahit ano. Isa akong taong nakatulong na sa mahigit 500 manggagawa sa UAE. Ang website na ito ay nagbibigay ng parehong mga tip, nang libre.',
 'ac1':'💰 Magtipid ng pera','ac1b':'Makatipid kahit maliit ang sahod',
 'ac2':'📈 Palakihin ang pera','ac2b':'Mga paraan na mababa ang panganib',
 'ac3':'📤 Magpadala ng pera','ac3b':'Pinakamahusay na rate, pinakamababang bayad',
 'ac4':'🛡 Iwasan ang scam','ac4b':'Alamin ang mga babala bago pa mahuli',
 'ab-trust':'Hindi ko kailanman hihilingin sa inyo na bumili ng kahit ano. Wala akong komisyon. Nandito ito dahil walang sinuman ang dapat harapin ito nang mag-isa.',
-'calc-title':'Magkano ang maititipid mo?',
-'calc-sub':'Ilipat ang slider. Tingnan kung paano lumalaki ang maliit na ipon.',
+'calc-title':'Magkano ang maititipid mo?','calc-sub':'Ilipat ang slider. Tingnan kung paano lumalaki ang maliit na ipon.',
 'cl1':'Nagtitipid ako bawat buwan','cl2':'Ilang taon','cl3':'Rate ng interes',
 'r-tl':'Kabuuang ipon','r-il':'Dagdag mula sa interes',
 'inv-title':'Palakihin ang pera nang walang malaking panganib',
 'inv-sub':'Hindi mo kailangang ilagay sa panganib ang iyong ipon. Ang mga opsyong ito ay ligtas.',
-'t1h':'Savings account na may mataas na interes','t1b':'Humingi sa iyong UAE bank ng savings account na may interes. Ang ilan ay nagbibigay ng 2–4% bawat taon. Ligtas ang iyong pera.',
-'t2h':'Government bonds (sa inang bansa)','t2b':'Ang Pilipinas, India, Nepal ay may government savings bonds. Ang gobyerno ang nag-iingat ng iyong pera — napaka-ligtas.',
-'t3h':'Money market funds sa UAE','t3b':'Ang mga app tulad ng Sarwa ay nagpapahintulot ng maliliit na pamumuhunan na mababa ang panganib. Mas mataas na paglago kaysa savings account.',
-'rem-title':'Sino ang nagbibigay ng mas marami sa inyong pamilya?',
-'rem-sub':'Ilagay kung magkano ang ipapadala.',
+'t1h':'Savings account na may mataas na interes','t1b':'Humingi sa iyong UAE bank ng savings account na may interes. Ang ilan ay nagbibigay ng 2–4% bawat taon.',
+'t2h':'Government bonds (sa inang bansa)','t2b':'Ang Pilipinas, India, Nepal ay may government savings bonds. Napaka-ligtas.',
+'t3h':'Money market funds sa UAE','t3b':'Ang mga app tulad ng Sarwa ay nagpapahintulot ng maliliit na pamumuhunan na mababa ang panganib.',
+'rem-title':'Sino ang nagbibigay ng mas marami sa inyong pamilya?','rem-sub':'Ilagay kung magkano ang ipapadala.',
 'rl1':'Halagang ipapadala','rl2':'Saan magpapadala',
 'rh1':'Serbisyo','rh2':'Matatanggap ng pamilya','rh3':'Bayad mo','rh4':'Bilis',
 'remit-note':'Ina-update ang mga rate tuwing linggo. Palaging tingnan ang website ng provider bago magpadala.',
 'sc-title':'Huwag mawalan ng pera sa scam',
-'sc-sub':'Ang mga scammer sa UAE ay nagta-target ng mga manggagawa. Ito ang pinakakaraniwang mga scam.',
-'s1h':'"Doblehin ang pera" na pangako','s1b':'Walang tunay na investment ang nagdodoble ng pera nang mabilis. Ang nagsasabi nito ay nagsisinungaling. Lumayo.',
-'s2h':'May humihingi ng pasaporte o Emirates ID','s2b':'Ang mga bangko at opisina ng gobyerno lamang ang nangangailangan ng orihinal na dokumento. Walang investment advisor ang hihiling nito.',
-'s3h':'WhatsApp investment groups','s3b':'Ang mga scammer ay unti-unting nagtatayo ng tiwala sa grupo, pagkatapos ay humingi ng pera. Hindi ganito ibinebenta ang tunay na investment.',
+'sc-sub':'Ang mga scammer sa UAE ay nagta-target ng mga manggagawa.',
+'s1h':'"Doblehin ang pera" na pangako','s1b':'Walang tunay na investment ang nagdodoble ng pera nang mabilis. Ang nagsasabi nito ay nagsisinungaling.',
+'s2h':'May humihingi ng pasaporte o Emirates ID','s2b':'Ang mga bangko at opisina ng gobyerno lamang ang nangangailangan ng orihinal na dokumento.',
+'s3h':'WhatsApp investment groups','s3b':'Ang mga scammer ay unti-unting nagtatayo ng tiwala bago humingi ng pera.',
 's4h':'Magbayad para makatanggap ng pera','s4b':'Anumang scheme na humihingi ng bayad muna para makatanggap — palaging scam.',
 's5h':'Mga trabahong mukhang napakaganda','s5b':'Mataas na sahod, madaling gawain, at humihingi ng paunang bayad — scam ito.',
-'f-title':'Hindi mo kailangang harapin ito nang mag-isa',
-'ft-head':'Isang tala bago ka mag-fill up',
-'ft-body':'Naiintindihan ko na maaaring hindi komportable ang ibahagi ang personal na impormasyon sa isang taong hindi mo kilala. Hindi mo kailangang ibahagi ang anumang hindi ka pa handa. Punan ang magagawa mo — kahit isang pangalan at numero lang ay sapat na.',
+'f-title':'Hindi mo kailangang harapin ito nang mag-isa','ft-head':'Isang tala bago ka mag-fill up',
+'ft-body':'Naiintindihan ko na maaaring hindi komportable ang ibahagi ang personal na impormasyon sa isang taong hindi mo kilala. Punan ang magagawa mo — kahit isang pangalan at numero lang ay sapat na.',
 'fl1':'Iyong pangalan','fl2':'WhatsApp number',
 'fl2h':'Dito ako makikipag-ugnayan sa iyo. Isama ang country code — hal. +63',
-'fl3':'Saan ka nanggaling',
-'fl4':'Saan kita maaaring tulungan?',
-'fl5':'Gaano kagaling ang iyong Ingles?',
-'fl5h':'Tinutulungan nito akong malaman kung paano makipag-ugnayan sa iyo',
-'fl6':'May iba pa?',
-'fl6h':'Gustong makatipid nang higit? Naghahanap ng mas magandang trabaho? Nabiktima ng scam? Isulat ang kahit ano — o iwanang blangko.',
-'fl7':'Referral code',
-'fl7h':'Ilagay ang zero (0) kung wala kang referral code',
+'fl3':'Saan ka nanggaling','fl4':'Saan kita maaaring tulungan?',
+'fl5':'Gaano kagaling ang iyong Ingles?','fl5h':'Tinutulungan nito akong malaman kung paano makipag-ugnayan sa iyo',
+'fl6':'May iba pa?','fl6h':'Gustong makatipid nang higit? Isulat ang kahit ano — o iwanang blangko.',
+'fl7':'Referral code','fl7h':'Ilagay ang zero (0) kung wala kang referral code',
 'f-btn':'Ipadala — makikipag-ugnayan ako sa lalong madaling panahon',
 'f-priv':'Ako lang ang makakakita nito. Hindi ko ito ibibigay sa iba.',
 'suc-title':'Salamat. Makikipag-ugnayan ako sa iyo sa WhatsApp.',
@@ -915,8 +871,9 @@ tl:{
 function setLang(code,btn){
   document.querySelectorAll('.lb').forEach(function(b){b.classList.remove('active');});
   btn.classList.add('active');
-  var t=L[code];if(!t)return;
+  var t=L[code];var d=D[code];if(!t)return;
   document.querySelector('.page').classList.toggle('rtl',code==='ur');
+  // Translate text elements
   for(var id in t){
     try{
       var el=document.getElementById(id);
@@ -926,6 +883,15 @@ function setLang(code,btn){
       if(id==='h-title'){el.innerHTML=t[id];}
       else{el.textContent=t[id];}
     }catch(e){}
+  }
+  // Translate dropdown options
+  if(d){
+    for(var oid in d){
+      try{
+        var oel=document.getElementById(oid);
+        if(oel)oel.textContent=d[oid];
+      }catch(e){}
+    }
   }
   calcRemit();calcSavings();
 }
