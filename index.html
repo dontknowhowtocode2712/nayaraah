@@ -7,6 +7,9 @@
 <meta name="theme-color" content="#085041">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="format-detection" content="telephone=no">
+<link rel="preconnect" href="https://formspree.io">
+<link rel="dns-prefetch" href="https://formspree.io">
 <title>Nayaraah — Free financial guidance for workers in the UAE</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -309,6 +312,7 @@ footer{padding:20px 16px;text-align:center;font-size:12px;color:var(--muted);bor
       <div class="hint" id="fl6h">Are you trying to save more? Looking for better work? Been scammed? Write anything — or leave this blank.</div>
       <textarea id="f-msg" placeholder="You can write in your own language if that is easier."></textarea>
     </div>
+    <div id="form-error" style="display:none;background:#FCEBEB;border:1px solid #F7C1C1;border-radius:8px;padding:12px;font-size:13px;color:#A32D2D;line-height:1.5"></div>
     <button class="submit-btn" id="f-btn" onclick="submitForm()">Send — I will be in touch soon</button>
     <p class="privacy" id="f-priv">Only I will see what you share here. I will never pass your details to anyone else.</p>
   </div>
@@ -343,10 +347,20 @@ function calcRemit(){
 
 fetch('rates.json')
   .then(function(r){return r.json();})
-  .then(function(data){rates=data;calcRemit();})
+  .then(function(data){rates=data;clearTimeout(ratesTimeout);calcRemit();})
   .catch(function(){
-    document.getElementById('remit-body').innerHTML='<tr><td colspan="4" style="color:var(--muted);font-size:13px;padding:12px 8px">Rates unavailable — please check provider websites directly.</td></tr>';
+    document.getElementById('remit-body').innerHTML='<tr><td colspan="4" style="color:var(--muted);font-size:13px;padding:12px 8px">Rates unavailable right now — please check provider websites directly.</td></tr>';
   });
+
+// Show loading state immediately
+document.getElementById('remit-body').innerHTML='<tr><td colspan="4" style="color:var(--muted);font-size:13px;padding:12px 8px">Loading rates...</td></tr>';
+
+// Timeout — if rates don't load in 6 seconds show fallback
+var ratesTimeout=setTimeout(function(){
+  if(!rates){
+    document.getElementById('remit-body').innerHTML='<tr><td colspan="4" style="color:var(--muted);font-size:13px;padding:12px 8px">Rates unavailable right now — please check <a href="https://wise.com" style="color:var(--g)">Wise</a>, <a href="https://alansariexchange.com" style="color:var(--g)">Al Ansari</a>, or <a href="https://luluexchange.com" style="color:var(--g)">LuLu Exchange</a> directly.</td></tr>';
+  }
+},6000);
 
 function calcSavings(){
   var m=parseInt(document.getElementById('monthly').value);
@@ -375,8 +389,18 @@ function submitForm(){
   var country=document.getElementById('f-country').value;
   var help=document.getElementById('f-help').value;
   var ref=document.getElementById('f-ref').value.trim();
+  var errorEl=document.getElementById('form-error');
+  errorEl.style.display='none';
   if(!name||!wa||!country||!help||!ref){
-    alert('Please fill in your name, WhatsApp number, country, what you would like assistance with, and your referral code (enter 0 if you do not have one).');
+    var missing=[];
+    if(!name)missing.push('your name');
+    if(!wa)missing.push('your WhatsApp number');
+    if(!country)missing.push('your country');
+    if(!help)missing.push('what you would like assistance with');
+    if(!ref)missing.push('a referral code (enter 0 if you do not have one)');
+    errorEl.textContent='Please fill in: '+missing.join(', ')+'.';
+    errorEl.style.display='block';
+    errorEl.scrollIntoView({behavior:'smooth',block:'center'});
     return;
   }
   var msg=document.getElementById('f-msg').value.trim();
